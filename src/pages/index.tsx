@@ -15,7 +15,8 @@ function Home() {
 export default Home
 
 const HomeContainer = styled.div`
-  width: 430px;
+  width: 100%;
+  max-width: 430px;
+  min-width: 320px;
   margin: 0 auto;
-  background-color: #e8e8eb;
 `
