@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from '@emotion/styled'
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
   )
 }
 
-export default Header
+export default memo(Header)
 
 const HeaderContainer = styled.nav`
   position: relative;

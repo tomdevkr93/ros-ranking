@@ -1,7 +1,8 @@
-import React from 'react'
+import styled from '@emotion/styled'
+import React, { memo } from 'react'
 import { ReactNode } from 'react'
-import Header from '../header'
-import Navigation from '../navigation'
+import Header from './Header'
+import Navigation from './Navigation'
 
 interface Props {
   children: ReactNode
@@ -9,12 +10,20 @@ interface Props {
 
 function Layout({ children }: Props) {
   return (
-    <>
+    <LayoutContainer>
       <Header />
       <Navigation />
       {children}
-    </>
+    </LayoutContainer>
   )
 }
 
-export default Layout
+export default memo(Layout)
+
+const LayoutContainer = styled.div`
+  min-width: 320px;
+  max-width: 430px;
+  margin: 0 auto;
+  background: linear-gradient(#e26074, #e2bb6d);
+  box-shadow: 0 0 20px black;
+`

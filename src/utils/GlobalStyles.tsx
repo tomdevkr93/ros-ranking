@@ -28,23 +28,23 @@ export const GlobalStyles = (
         font-smoothing: antialiased;
       }
 
+      html,
+      body,
+      #__next {
+        width: 100%;
+        height: 100%;
+      }
+
       html {
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 16px;
-        background-color: #e8e8eb;
+        background-color: #2b2b3d;
 
         /* Prevent font scaling in landscape */
         -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
         -moz-text-size-adjust: none; /*Firefox*/
         -ms-text-size-adjust: none; /*Ie*/
         -o-text-size-adjust: none; /*old versions of Opera*/
-      }
-
-      html,
-      body,
-      #__next {
-        width: 100%;
-        height: 100%;
       }
     `}
   />
