@@ -1,15 +1,8 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
-import { CompetitionType } from '../../recoil/user/atom'
 import Link from 'next/link'
-import { useRouter } from 'next/dist/client/router'
 
 function Navigation() {
-  const {
-    query: { type },
-  } = useRouter()
-  console.log(type)
-
   return (
     <NavigationContainer>
       <Form>
@@ -18,21 +11,20 @@ function Navigation() {
         <SearchButton src="/search.png" alt="돋보기 버튼" />
       </Form>
       <CompetitionList>
-        <Link href={`/competition/OFFICIAL_MATCH`}>
-          <li className={type === 'OFFICIAL_MATCH' ? 'active' : ''}>{CompetitionType.OFFICIAL_MATCH}</li>
+        <Link href="/member">
+          <li>클럽원</li>
         </Link>
-        <Link href={`/competition/PUBLIC`}>
-          <li className={type === 'PUBLIC' ? 'active' : ''}>{CompetitionType.PUBLIC}</li>
-        </Link>
-        <Link href={`/competition/ELITE`}>
-          <li className={type === 'ELITE' ? 'active' : ''}>{CompetitionType.ELITE}</li>
-        </Link>
-        <Link href={`/competition/MASTER`}>
-          <li className={type === 'MASTER' ? 'active' : ''}>{CompetitionType.MASTER}</li>
-        </Link>
-        <Link href={`/competition/ITEM_MATCH`}>
-          <li className={type === 'ITEM_MATCH' ? 'active' : ''}>{CompetitionType.ITEM_MATCH}</li>
-        </Link>
+        <li>
+          <h2>로즈샤론내전</h2>
+          <SubMenu>
+            <li>· 공식 단체전</li>
+            <li>· 일반인</li>
+            <li>· 엘리트</li>
+            <li>· 마스터</li>
+            <li>· 아이템 왕중왕</li>
+          </SubMenu>
+        </li>
+        <li>로즈샤론문의</li>
       </CompetitionList>
     </NavigationContainer>
   )
@@ -44,7 +36,7 @@ const NavigationContainer = styled.nav`
   position: relative;
   margin: 15px auto;
   width: 93%;
-  height: 110px;
+  height: 140px;
 `
 
 const Form = styled.form`
@@ -92,23 +84,48 @@ const SearchButton = styled.img`
 `
 const CompetitionList = styled.ul`
   position: absolute;
-  bottom: 8px;
+  bottom: 0;
   width: 100%;
   text-align: center;
 
-  li {
+  & > li {
+    position: relative;
     display: inline-block;
+    margin: 0 5px;
+    padding: 0.8em 1em;
+    width: 98px;
+    color: #666666;
+    border: 1px solid #000000;
+    border-radius: 5px;
     font-size: 12px;
-    margin: 0 3px;
-    padding: 4px;
-    color: #dddddd;
+    background-color: #fefefe;
     cursor: pointer;
     transition: all 0.8s;
+  }
+
+  & > li.active {
+    color: #fefefe;
+    background-color: #666666;
+  }
+`
+const SubMenu = styled.ul`
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+  padding: 0 15px;
+  width: 120px;
+  text-align: left;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+
+  & > li {
+    margin: 11px 0;
+    padding: 2px 1px;
     cursor: pointer;
   }
 
-  li.active {
+  & > li:hover {
     color: white;
-    font-weight: bold;
+    background-color: #666666;
   }
 `

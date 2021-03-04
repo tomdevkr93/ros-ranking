@@ -9,7 +9,7 @@ function Header() {
         <img src="/rosbi.png" alt="ros bi" />
         <span>RYANG-A.ROS</span>
       </Title>
-      <OpentalkLink href="https://open.kakao.com/o/sm6giuRc">
+      <OpentalkLink href="https://open.kakao.com/o/gEsPpHpc">
         <img src="/kakaotalk.svg" alt="kakaotalk logo" />
       </OpentalkLink>
     </HeaderContainer>
