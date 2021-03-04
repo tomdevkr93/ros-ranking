@@ -14,7 +14,8 @@ function Navigation() {
     <NavigationContainer>
       <Form>
         <input type="text" placeholder="닉네임 검색" />
-        <img src="/search.svg" alt="돋보기 버튼" />
+        <Hr />
+        <SearchButton src="/search.png" alt="돋보기 버튼" />
       </Form>
       <CompetitionList>
         <Link href={`/competition/OFFICIAL_MATCH`}>
@@ -51,25 +52,43 @@ const Form = styled.form`
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
+  width: 80%;
 
   input {
-    padding: 10px 30px 10px 10px;
-    border: none;
-    background-color: white;
+    padding: 0.8em 30px 0.8em 1em;
+    width: 100%;
+    font-size: 15px;
     border-radius: 5px;
+    border: 1px solid #040404;
+    box-shadow: 4px 4px 1px #666666;
+    background-color: white;
 
     &:focus {
       outline: none;
     }
-  }
 
-  img {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
+    &::placeholder {
+      font-weight: 400;
+    }
   }
+`
+
+const Hr = styled.span`
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5px;
+  height: 26px;
+  background-color: #000000;
+`
+
+const SearchButton = styled.img`
+  position: absolute;
+  right: 12px;
+  top: 53%;
+  transform: translateY(-50%);
+  width: 30px;
 `
 const CompetitionList = styled.ul`
   position: absolute;

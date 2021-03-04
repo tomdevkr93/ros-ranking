@@ -18,6 +18,12 @@ const fontFace = css`
   @font-face {
     font-family: 'S-CoreDream';
     font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/S-CoreDream-5Medium.woff2') format('woff2'), url('/fonts/S-CoreDream-5Medium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
     font-weight: 600;
     src: url('/fonts/S-CoreDream-6Bold.woff2') format('woff2'), url('/fonts/S-CoreDream-6Bold.woff') format('woff');
   }

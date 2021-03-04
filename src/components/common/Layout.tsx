@@ -24,6 +24,6 @@ const LayoutContainer = styled.div`
   min-width: 320px;
   max-width: 430px;
   margin: 0 auto;
-  background: linear-gradient(#e26074, #e2bb6d);
+  background-color: #eeeeee;
   box-shadow: 0 0 20px black;
 `
