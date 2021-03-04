@@ -22,7 +22,6 @@ const HeaderContainer = styled.header`
   position: relative;
   width: 100%;
   height: 210px;
-  background-color: #fdfdfd;
 `
 const Title = styled.h1`
   position: absolute;

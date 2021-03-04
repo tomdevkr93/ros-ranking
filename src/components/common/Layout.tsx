@@ -21,9 +21,10 @@ function Layout({ children }: Props) {
 export default memo(Layout)
 
 const LayoutContainer = styled.div`
+  margin: 0 auto;
   min-width: 320px;
   max-width: 430px;
-  margin: 0 auto;
-  background-color: #eeeeee;
+  height: 100%;
+  background-color: #ffffff;
   box-shadow: 0 0 20px black;
 `

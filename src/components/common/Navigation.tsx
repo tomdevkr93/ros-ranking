@@ -34,15 +34,15 @@ export default memo(Navigation)
 
 const NavigationContainer = styled.nav`
   position: relative;
-  margin: 15px auto;
-  width: 93%;
-  height: 140px;
+  width: 100%;
+  height: 200px;
+  background-color: #eeeeee;
 `
 
 const Form = styled.form`
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 40%;
   transform: translate(-50%, -50%);
   width: 80%;
 
@@ -81,10 +81,11 @@ const SearchButton = styled.img`
   top: 53%;
   transform: translateY(-50%);
   width: 30px;
+  cursor: pointer;
 `
 const CompetitionList = styled.ul`
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   text-align: center;
 
