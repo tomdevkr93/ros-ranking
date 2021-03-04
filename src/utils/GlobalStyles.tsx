@@ -1,6 +1,7 @@
 import emotionReset from 'emotion-reset'
 import { Global, css } from '@emotion/react'
 import React from 'react'
+import fontFace from './font-face'
 
 export const textEllipsis = css`
   text-overflow: ellipsis;
@@ -20,6 +21,7 @@ export const GlobalStyles = (
   <Global
     styles={css`
       ${emotionReset}
+      ${fontFace}
 
       *, *::after, *::before {
         box-sizing: border-box;
@@ -36,7 +38,7 @@ export const GlobalStyles = (
       }
 
       html {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'S-CoreDream', sans-serif;
         font-size: 16px;
         background-color: #2b2b3d;
 

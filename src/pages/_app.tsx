@@ -16,12 +16,6 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Rose Of Sharon Ranking" />
         <meta name="author" content="devho813 <devho813@gmail.com>" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       {GlobalStyles}
       <RecoilRoot>
