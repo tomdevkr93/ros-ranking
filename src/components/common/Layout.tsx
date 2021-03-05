@@ -28,6 +28,7 @@ const LayoutContainer = styled.div`
   height: 100%;
   background-color: #ffffff;
   box-shadow: 0 0 20px black;
+  overflow-x: hidden;
   overflow-y: scroll;
   ${hideScrollBar}
 `
