@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from '@emotion/styled'
-import Season from '../../components/competition/Season'
+// import Season from '../../components/competition/Season'
 import { useRouter } from 'next/dist/client/router'
 function Competition() {
   const {
@@ -10,7 +10,7 @@ function Competition() {
   return (
     <CompetitionContainer>
       {type}
-      <Season />
+      {/* <Season /> */}
     </CompetitionContainer>
   )
 }
