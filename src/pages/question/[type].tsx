@@ -1,8 +1,12 @@
 import styled from '@emotion/styled'
+import { useRouter } from 'next/dist/client/router'
 import React from 'react'
 
 function Question() {
-  return <QuestionContainer></QuestionContainer>
+  const {
+    query: { type },
+  } = useRouter()
+  return <QuestionContainer>{type}</QuestionContainer>
 }
 
 export default Question

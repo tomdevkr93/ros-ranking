@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 function Member() {
-  return <MemberContainer>hi</MemberContainer>
+  return <MemberContainer>클럽원</MemberContainer>
 }
 
 export default Member

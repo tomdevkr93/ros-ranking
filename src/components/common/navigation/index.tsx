@@ -1,6 +1,8 @@
 import styled from '@emotion/styled'
 import React, { memo, useCallback, useState } from 'react'
 import Link from 'next/link'
+import { CompetitionType, QuestionType } from '../../../interfaces'
+import Form from './Form'
 
 enum Menu {
   'MEMBER',
@@ -13,19 +15,15 @@ function Navigation() {
 
   const onClickMenu = useCallback(
     (menu: Menu) => () => {
-      setShowSubMenu(menu)
+      setShowSubMenu((prevState) => (prevState === menu ? null : menu))
     },
     []
   )
 
   return (
     <NavigationContainer>
-      <Form>
-        <input type="text" placeholder="닉네임 검색" />
-        <Hr />
-        <SearchButton src="/search.png" alt="돋보기 버튼" />
-      </Form>
-      <CompetitionList>
+      <Form />
+      <MenuList>
         <Link href="/member">
           <li>클럽원</li>
         </Link>
@@ -36,11 +34,21 @@ function Navigation() {
         >
           <h2>로즈샤론내전</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.COMPETITION}>
-            <li>· 공식 단체전</li>
-            <li>· 일반인</li>
-            <li>· 엘리트</li>
-            <li>· 마스터</li>
-            <li>· 아이템 왕중왕</li>
+            <Link href={`/competition/${CompetitionType.OFFICIAL_MATCH}`}>
+              <li>· 공식 단체전</li>
+            </Link>
+            <Link href={`/competition/${CompetitionType.PUBLIC}`}>
+              <li>· 일반인</li>
+            </Link>
+            <Link href={`/competition/${CompetitionType.ELITE}`}>
+              <li>· 엘리트</li>
+            </Link>
+            <Link href={`/competition/${CompetitionType.MASTER}`}>
+              <li>· 마스터</li>
+            </Link>
+            <Link href={`/competition/${CompetitionType.ITEM_MATCH}`}>
+              <li>· 아이템 왕중왕</li>
+            </Link>
           </SubMenu>
         </li>
         <li
@@ -50,12 +58,18 @@ function Navigation() {
         >
           <h2>로즈샤론문의</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.QUESTION}>
-            <li>· 로즈샤론가입문의</li>
-            <li>· 로즈샤론친선경기</li>
-            <li>· 로즈샤론비매신고</li>
+            <Link href={`/question/${QuestionType.SIGN_UP}`}>
+              <li>· 로즈샤론가입문의</li>
+            </Link>
+            <Link href={`/question/${QuestionType.FRIENDLY_MATCH}`}>
+              <li>· 로즈샤론친선경기</li>
+            </Link>
+            <Link href={`/question/${QuestionType.REPORT}`}>
+              <li>· 로즈샤론비매신고</li>
+            </Link>
           </SubMenu>
         </li>
-      </CompetitionList>
+      </MenuList>
     </NavigationContainer>
   )
 }
@@ -69,52 +83,7 @@ const NavigationContainer = styled.nav`
   background-color: #eeeeee;
 `
 
-const Form = styled.form`
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-
-  input {
-    padding: 1em 30px 0.9em 1em;
-    width: 100%;
-    font-size: 15px;
-    font-family: 'S-CoreDream', sans-serif;
-    border-radius: 5px;
-    border: 1px solid #040404;
-    box-shadow: 4px 4px 1px #666666;
-    background-color: white;
-
-    &:focus {
-      outline: none;
-    }
-
-    &::placeholder {
-      font-weight: 400;
-    }
-  }
-`
-
-const Hr = styled.span`
-  position: absolute;
-  right: 55px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0.5px;
-  height: 26px;
-  background-color: #000000;
-`
-
-const SearchButton = styled.img`
-  position: absolute;
-  right: 12px;
-  top: 53%;
-  transform: translateY(-50%);
-  width: 30px;
-  cursor: pointer;
-`
-const CompetitionList = styled.ul`
+const MenuList = styled.ul`
   position: absolute;
   bottom: 20px;
   width: 100%;

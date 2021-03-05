@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import React, { memo } from 'react'
 import { ReactNode } from 'react'
 import Header from './Header'
-import Navigation from './Navigation'
+import Navigation from './navigation'
 
 interface Props {
   children: ReactNode
