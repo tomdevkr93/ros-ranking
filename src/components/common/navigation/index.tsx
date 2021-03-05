@@ -25,7 +25,9 @@ function Navigation() {
       <Form />
       <MenuList>
         <Link href="/member">
-          <li>클럽원</li>
+          <li onClick={onClickMenu(Menu.MEMBER)} aria-hidden="true">
+            클럽원
+          </li>
         </Link>
         <li
           onClick={onClickMenu(Menu.COMPETITION)}
