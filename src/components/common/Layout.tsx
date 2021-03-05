@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
 import { ReactNode } from 'react'
+import { hideScrollBar } from '../../utils/GlobalStyles'
 import Header from './Header'
 import Navigation from './navigation'
 
@@ -27,4 +28,6 @@ const LayoutContainer = styled.div`
   height: 100%;
   background-color: #ffffff;
   box-shadow: 0 0 20px black;
+  overflow-y: scroll;
+  ${hideScrollBar}
 `
