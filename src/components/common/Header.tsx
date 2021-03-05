@@ -9,9 +9,13 @@ function Header() {
         <img src="/rosbi.png" alt="ros bi" />
         <span>RYANG-A.ROS</span>
       </Title>
-      <OpentalkLink href="https://open.kakao.com/o/gEsPpHpc">
+      <OpentalkLink href="https://open.kakao.com/o/gEsPpHpc" target="_blank">
         <img src="/kakaotalk.svg" alt="kakaotalk logo" />
       </OpentalkLink>
+      <YoutubeLink href="https://www.youtube.com/channel/UCjFB4zWHgyxcP4FNMlqccCg/featured" target="_blank">
+        <img src="/youtube.svg" alt="youtube logo" />
+      </YoutubeLink>
+      {/* TODO: 유튜브 링크 추가 */}
     </HeaderContainer>
   )
 }
@@ -21,7 +25,7 @@ export default memo(Header)
 const HeaderContainer = styled.header`
   position: relative;
   width: 100%;
-  height: 210px;
+  height: 180px;
 `
 const Title = styled.h1`
   position: absolute;
@@ -63,6 +67,16 @@ const OpentalkLink = styled.a`
   position: absolute;
   right: 15px;
   top: 15px;
+
+  img {
+    width: 35px;
+  }
+`
+
+const YoutubeLink = styled.a`
+  position: absolute;
+  right: 15px;
+  top: 60px;
 
   img {
     width: 35px;
