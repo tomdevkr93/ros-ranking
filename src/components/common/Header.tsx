@@ -44,14 +44,14 @@ const Title = styled.h1`
   }
 
   img {
-    margin-top: 8px;
+    margin-top: 5px;
     width: 100%;
     height: auto;
   }
 
   span {
     float: right;
-    margin-top: 0.3em;
+    margin-top: 0.2em;
     font-size: 11px;
     font-weight: 500;
     color: #646464;

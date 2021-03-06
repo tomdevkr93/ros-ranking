@@ -1,4 +1,4 @@
-export enum Avatar {
+export enum AvatarType {
   DAO = '/avatar/DAO.png',
   ETHAN = '/avatar/ETHAN.png',
   BAZZI = '/avatar/BAZZI.png',
@@ -23,13 +23,21 @@ export enum QuestionType {
   REPORT,
 }
 
+export enum PositionType {
+  MASTER,
+  SUBMASTER,
+  ELITE,
+  MEMBER,
+}
+
 export interface Trophy {
   title: CompetitionType
   season: number
 }
-export interface UserInfo {
+export interface MemberInfo {
   id: number
   name: string
-  avatar: Avatar
+  avatar: AvatarType
   trophys: Trophy[]
+  position: PositionType
 }
