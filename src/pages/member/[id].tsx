@@ -20,6 +20,19 @@ function getCompetitionTitle(type: CompetitionType) {
   }
 }
 
+function getPositionTitle(type: PositionType) {
+  switch (type) {
+    case PositionType.MASTER:
+      return '클럽장'
+    case PositionType.SUBMASTER:
+      return '부클럽장'
+    case PositionType.ELITE:
+      return '엘리트'
+    case PositionType.MEMBER:
+      return '클럽원'
+  }
+}
+
 function MemberPage() {
   const {
     query: { id },
@@ -44,7 +57,7 @@ function MemberPage() {
             <h3>캐릭터 명:</h3> <span>{member.name}</span>
           </li>
           <li>
-            <h3>포지션:</h3> <span>{PositionType[member.position]}</span>
+            <h3>포지션:</h3> <span>{getPositionTitle(member.position)}</span>
           </li>
         </InfoRight>
       </MemberInfo>
@@ -65,24 +78,32 @@ function MemberPage() {
             )}
           </Floor>
           <Floor>
-            {/* {member.trophys.map((trophy) => (
-              <span key={`${trophy.title}-${trophy.season}`}>
-                <TrophyDescription>
-                  {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
-                </TrophyDescription>
-                <TrophyIcon>{'🏆'}</TrophyIcon>
-              </span>
-            ))} */}
+            {member.trophys.map(
+              (trophy, index) =>
+                index >= 3 &&
+                index <= 5 && (
+                  <span key={`${trophy.title}-${trophy.season}`}>
+                    <TrophyDescription>
+                      {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
+                    </TrophyDescription>
+                    <TrophyIcon>{'🏆'}</TrophyIcon>
+                  </span>
+                )
+            )}
           </Floor>
           <Floor>
-            {/* {member.trophys.map((trophy) => (
-              <span key={`${trophy.title}-${trophy.season}`}>
-                <TrophyDescription>
-                  {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
-                </TrophyDescription>
-                <TrophyIcon>{'🏆'}</TrophyIcon>
-              </span>
-            ))} */}
+            {member.trophys.map(
+              (trophy, index) =>
+                index >= 6 &&
+                index <= 8 && (
+                  <span key={`${trophy.title}-${trophy.season}`}>
+                    <TrophyDescription>
+                      {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
+                    </TrophyDescription>
+                    <TrophyIcon>{'🏆'}</TrophyIcon>
+                  </span>
+                )
+            )}
           </Floor>
         </FloorContainer>
       </MemberTrophys>
@@ -106,10 +127,11 @@ const MemberInfo = styled.div`
 const InfoLeft = styled.div`
   display: inline-block;
   width: 30%;
+  text-align: right;
   vertical-align: middle;
 
   img {
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
   }
 `

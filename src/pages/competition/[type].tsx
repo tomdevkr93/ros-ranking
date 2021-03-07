@@ -9,7 +9,7 @@ function Competition() {
 
   return (
     <CompetitionContainer>
-      {type}
+      {type} 구현중..
       {/* <Season /> */}
     </CompetitionContainer>
   )

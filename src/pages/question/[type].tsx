@@ -6,7 +6,7 @@ function Question() {
   const {
     query: { type },
   } = useRouter()
-  return <QuestionContainer>{type}</QuestionContainer>
+  return <QuestionContainer>{type} 구현중..</QuestionContainer>
 }
 
 export default Question
