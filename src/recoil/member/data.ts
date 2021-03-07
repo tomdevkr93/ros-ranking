@@ -296,14 +296,14 @@ export default [
     position: PositionType.MEMBER,
   },
   {
-    id: 42,
+    id: 43,
     name: 'LISAKKU',
     avatar: AvatarType.BAZZI,
     trophys: [],
     position: PositionType.MEMBER,
   },
   {
-    id: 43,
+    id: 44,
     name: 'JIBALY',
     avatar: AvatarType.BAZZI,
     trophys: [],

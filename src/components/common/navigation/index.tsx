@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
-import React, { memo, useCallback, useState } from 'react'
+import React, { memo, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { CompetitionType, QuestionType } from '../../../interfaces'
 import Form from './Form'
+import { useRouter } from 'next/dist/client/router'
 
 enum Menu {
   'MEMBER',
@@ -12,6 +13,18 @@ enum Menu {
 
 function Navigation() {
   const [showSubMenu, setShowSubMenu] = useState<Menu | null>(null)
+  const [activeMenu, setActiveMenu] = useState<Menu | null>(null)
+  const { asPath } = useRouter()
+
+  useEffect(() => {
+    if (asPath.indexOf('member') >= 0) {
+      setActiveMenu(Menu.MEMBER)
+    } else if (asPath.indexOf('competition') >= 0) {
+      setActiveMenu(Menu.COMPETITION)
+    } else if (asPath.indexOf('question') >= 0) {
+      setActiveMenu(Menu.QUESTION)
+    }
+  }, [asPath])
 
   const onClickMenu = useCallback(
     (menu: Menu) => () => {
@@ -25,14 +38,18 @@ function Navigation() {
       <Form />
       <MenuList>
         <Link href="/member">
-          <li onClick={onClickMenu(Menu.MEMBER)} aria-hidden="true">
+          <li
+            onClick={onClickMenu(Menu.MEMBER)}
+            aria-hidden="true"
+            className={activeMenu === Menu.MEMBER ? 'active' : ''}
+          >
             클럽원
           </li>
         </Link>
         <li
           onClick={onClickMenu(Menu.COMPETITION)}
           aria-hidden="true"
-          className={showSubMenu === Menu.COMPETITION ? 'active' : ''}
+          className={activeMenu === Menu.COMPETITION ? 'active' : ''}
         >
           <h2>로즈샤론내전</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.COMPETITION}>
@@ -56,7 +73,7 @@ function Navigation() {
         <li
           onClick={onClickMenu(Menu.QUESTION)}
           aria-hidden="true"
-          className={showSubMenu === Menu.QUESTION ? 'active' : ''}
+          className={activeMenu === Menu.QUESTION ? 'active' : ''}
         >
           <h2>로즈샤론문의</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.QUESTION}>
