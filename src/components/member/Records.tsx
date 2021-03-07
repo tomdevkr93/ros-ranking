@@ -46,20 +46,26 @@ const RecordContainer = styled.ul`
 
   table {
     margin: 20px auto 0;
-    width: 300px;
+    width: 100%;
     text-align: center;
+    background-color: #eeeeee;
+    box-shadow: 1px 1px 3px black;
 
     thead {
       font-weight: bold;
+      border-bottom: 1px solid #000000;
     }
 
     tbody {
       font-size: 14px;
+
+      tr {
+        border-bottom: 2px solid white;
+      }
     }
 
     td {
-      border: 1px solid #000000;
-      padding: 5px;
+      padding: 8px 0;
       vertical-align: middle;
     }
   }
