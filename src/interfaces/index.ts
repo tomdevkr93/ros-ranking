@@ -34,10 +34,17 @@ export interface Trophy {
   title: CompetitionType
   season: number
 }
+
+export interface Record {
+  title: CompetitionType
+  season: number
+  Rank: number
+}
 export interface MemberInfo {
   id: number
   name: string
   avatar: AvatarType
   trophys: Trophy[]
+  record: Record[]
   position: PositionType
 }

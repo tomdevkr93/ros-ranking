@@ -1,18 +1,22 @@
 import styled from '@emotion/styled'
+import Link from 'next/link'
 import React, { memo } from 'react'
 import { AvatarType } from '../../interfaces'
 
 interface Props {
+  id: number
   avatar: AvatarType
   name: string
 }
 
-function Member({ avatar, name }: Props) {
+function Member({ id, avatar, name }: Props) {
   return (
-    <MemberContainer>
-      <Avatar src={avatar} />
-      <Name>{name}</Name>
-    </MemberContainer>
+    <Link href={`/member/${id}`}>
+      <MemberContainer>
+        <Avatar src={avatar} />
+        <Name>{name}</Name>
+      </MemberContainer>
+    </Link>
   )
 }
 

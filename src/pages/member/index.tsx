@@ -57,7 +57,7 @@ function MemberPage() {
             {members &&
               members.master.map((member) => (
                 <li key={member.id}>
-                  <Member avatar={member.avatar} name={member.name} />
+                  <Member id={member.id} avatar={member.avatar} name={member.name} />
                 </li>
               ))}
           </Members>
@@ -68,7 +68,7 @@ function MemberPage() {
             {members &&
               members.subMaster.map((member) => (
                 <li key={member.id}>
-                  <Member avatar={member.avatar} name={member.name} />
+                  <Member id={member.id} avatar={member.avatar} name={member.name} />
                 </li>
               ))}
           </Members>
@@ -79,7 +79,7 @@ function MemberPage() {
             {members &&
               members.elite.map((member) => (
                 <li key={member.id}>
-                  <Member avatar={member.avatar} name={member.name} />
+                  <Member id={member.id} avatar={member.avatar} name={member.name} />
                 </li>
               ))}
           </Members>
@@ -90,7 +90,7 @@ function MemberPage() {
             {members &&
               members.member.map((member) => (
                 <li key={member.id}>
-                  <Member avatar={member.avatar} name={member.name} />
+                  <Member id={member.id} avatar={member.avatar} name={member.name} />
                 </li>
               ))}
           </Members>

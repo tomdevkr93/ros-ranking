@@ -1,18 +1,34 @@
+import { CompetitionType, MemberInfo } from './../../interfaces/index'
 import { AvatarType, PositionType } from '../../interfaces/index'
 
-export default [
+const data: MemberInfo[] = [
   {
     id: 1,
     name: 'RYANG-A',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MASTER,
   },
   {
     id: 2,
     name: 'HONEYMOON',
     avatar: AvatarType.BAZZI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+      },
+      {
+        title: CompetitionType.ITEM_MATCH,
+        season: 1,
+      },
+      {
+        title: CompetitionType.PUBLIC,
+        season: 2,
+      },
+    ],
+    record: [],
     position: PositionType.ELITE,
   },
   {
@@ -20,13 +36,20 @@ export default [
     name: 'PUPPY',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 4,
     name: 'SASAK',
     avatar: AvatarType.UNI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+      },
+    ],
+    record: [],
     position: PositionType.SUBMASTER,
   },
   {
@@ -34,13 +57,20 @@ export default [
     name: 'SIBSUNBI',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 6,
     name: 'BARAM',
     avatar: AvatarType.UNI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.ITEM_MATCH,
+        season: 1,
+      },
+    ],
+    record: [],
     position: PositionType.ELITE,
   },
   {
@@ -48,6 +78,7 @@ export default [
     name: 'RIGEL',
     avatar: AvatarType.MARID,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -55,27 +86,50 @@ export default [
     name: 'BAMBOO',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 9,
     name: 'JIZZANG',
     avatar: AvatarType.CHENCHEN,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.PUBLIC,
+        season: 1,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 10,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.MASTER,
+        season: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 3,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 11,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+      },
+    ],
+    record: [],
     position: PositionType.ELITE,
   },
   {
@@ -83,6 +137,7 @@ export default [
     name: 'LEMON',
     avatar: AvatarType.ETHAN,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -90,6 +145,7 @@ export default [
     name: 'TERA',
     avatar: AvatarType.DIZNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -97,6 +153,7 @@ export default [
     name: 'RUFA',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -104,6 +161,7 @@ export default [
     name: 'BLACK',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -111,6 +169,7 @@ export default [
     name: 'ICEKING',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -118,6 +177,7 @@ export default [
     name: 'JOONAN',
     avatar: AvatarType.MARID,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -125,13 +185,28 @@ export default [
     name: 'MINZHILY',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 19,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 2,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 4,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -139,13 +214,20 @@ export default [
     name: 'LEGEND',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.ELITE,
   },
   {
     id: 21,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -153,6 +235,7 @@ export default [
     name: 'SUNNY',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -160,13 +243,20 @@ export default [
     name: 'STYLE',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 24,
     name: 'TT',
     avatar: AvatarType.BAZZI,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.ELITE,
+        season: 1,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -174,6 +264,7 @@ export default [
     name: 'RUMA',
     avatar: AvatarType.DIZNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -181,6 +272,7 @@ export default [
     name: 'JOONGSA',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -188,6 +280,7 @@ export default [
     name: 'CURATOR',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -195,6 +288,7 @@ export default [
     name: 'BLANK',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -202,6 +296,7 @@ export default [
     name: 'ELLIS',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -209,6 +304,7 @@ export default [
     name: 'ZZANGA',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -216,6 +312,7 @@ export default [
     name: 'MANGO',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -223,6 +320,7 @@ export default [
     name: 'EOLPPAK',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -230,6 +328,7 @@ export default [
     name: 'JISU',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -237,6 +336,7 @@ export default [
     name: 'IPHONE',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -244,13 +344,20 @@ export default [
     name: 'BAZZI',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
     id: 36,
     name: 'YUJIN',
     avatar: AvatarType.CHENCHEN,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+      },
+    ],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -258,6 +365,7 @@ export default [
     name: 'NEOGUL',
     avatar: AvatarType.UNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -265,6 +373,7 @@ export default [
     name: 'DAOBF',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -272,6 +381,7 @@ export default [
     name: 'BAPE',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -279,6 +389,7 @@ export default [
     name: 'LIOKKU',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -286,6 +397,7 @@ export default [
     name: 'ROSE',
     avatar: AvatarType.DAO,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -293,6 +405,7 @@ export default [
     name: 'YABURI',
     avatar: AvatarType.DIZNI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -300,6 +413,7 @@ export default [
     name: 'LISAKKU',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
   {
@@ -307,6 +421,9 @@ export default [
     name: 'JIBALY',
     avatar: AvatarType.BAZZI,
     trophys: [],
+    record: [],
     position: PositionType.MEMBER,
   },
 ]
+
+export default data
