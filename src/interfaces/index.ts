@@ -38,7 +38,7 @@ export interface Trophy {
 export interface Record {
   title: CompetitionType
   season: number
-  Rank: number
+  rank: number
 }
 export interface MemberInfo {
   id: number

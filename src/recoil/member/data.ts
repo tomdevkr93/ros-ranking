@@ -28,7 +28,23 @@ const data: MemberInfo[] = [
         season: 2,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.ITEM_MATCH,
+        season: 1,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.PUBLIC,
+        season: 2,
+        rank: 1,
+      },
+    ],
     position: PositionType.ELITE,
   },
   {
@@ -49,7 +65,13 @@ const data: MemberInfo[] = [
         season: 1,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 1,
+      },
+    ],
     position: PositionType.SUBMASTER,
   },
   {
@@ -70,7 +92,13 @@ const data: MemberInfo[] = [
         season: 1,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.ITEM_MATCH,
+        season: 1,
+        rank: 1,
+      },
+    ],
     position: PositionType.ELITE,
   },
   {
@@ -99,7 +127,13 @@ const data: MemberInfo[] = [
         season: 1,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.PUBLIC,
+        season: 1,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -116,7 +150,18 @@ const data: MemberInfo[] = [
         season: 3,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.MASTER,
+        season: 1,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 3,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -129,7 +174,13 @@ const data: MemberInfo[] = [
         season: 2,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 1,
+      },
+    ],
     position: PositionType.ELITE,
   },
   {
@@ -206,7 +257,23 @@ const data: MemberInfo[] = [
         season: 4,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 2,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 4,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -227,7 +294,13 @@ const data: MemberInfo[] = [
         season: 2,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -256,7 +329,13 @@ const data: MemberInfo[] = [
         season: 1,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.ELITE,
+        season: 1,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -357,7 +436,13 @@ const data: MemberInfo[] = [
         season: 1,
       },
     ],
-    record: [],
+    record: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
