@@ -1,9 +1,39 @@
 import styled from '@emotion/styled'
-import React, { memo } from 'react'
+import { useRouter } from 'next/dist/client/router'
+import React, { memo, useCallback, useState } from 'react'
+import { useRecoilValue } from 'recoil'
+import { memberAtom } from '../../../recoil/member/atom'
 function Form() {
+  const [nickName, setNickName] = useState('')
+  const members = useRecoilValue(memberAtom)
+  const router = useRouter()
+
+  const onChangeNickname = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setNickName(e.target.value)
+  }, [])
+
+  const onSubmit = useCallback(
+    (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+      if (!nickName || !members) {
+        return
+      }
+
+      const upperCaseNickName = nickName.toUpperCase()
+
+      for (const member of members) {
+        if (member.name.indexOf(upperCaseNickName) >= 0) {
+          setNickName('')
+          router.push(`/member/${member.id}`)
+        }
+      }
+    },
+    [nickName, members]
+  )
+
   return (
-    <FormContainer>
-      <input type="text" placeholder="닉네임 검색" />
+    <FormContainer onSubmit={onSubmit}>
+      <input type="text" placeholder="닉네임 검색" value={nickName} onChange={onChangeNickname} />
       <Hr />
       <SearchButton src="/search.png" alt="돋보기 버튼" />
     </FormContainer>
