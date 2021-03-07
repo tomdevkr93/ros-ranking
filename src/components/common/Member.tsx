@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React, { memo } from 'react'
 import { AvatarType } from '../../interfaces'
 
 interface Props {
@@ -16,11 +16,12 @@ function Member({ avatar, name }: Props) {
   )
 }
 
-export default Member
+export default memo(Member)
 
 const MemberContainer = styled.span`
   display: inline-block;
-  width: 55px;
+  width: 60px;
+  text-align: center;
   cursor: pointer;
 `
 
@@ -31,7 +32,7 @@ const Avatar = styled.img`
 
 const Name = styled.p`
   margin-top: 3px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 300;
   color: #ee8635;
 `

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled'
 import React, { useEffect, useState } from 'react'
 import { useRecoilValue } from 'recoil'
-import Member from '../components/common/Member'
-import { PositionType, MemberInfo } from '../interfaces'
-import { memberAtom } from '../recoil/member/atom'
+import Member from '../../components/common/Member'
+import { MemberInfo, PositionType } from '../../interfaces'
+import { memberAtom } from '../../recoil/member/atom'
 
 interface Members {
   master: MemberInfo[]
@@ -105,7 +105,6 @@ export default MemberPage
 const MemberContainer = styled.section``
 
 const MemberList = styled.ul`
-  margin-top: 30px;
   width: 100%;
   text-align: center;
 
@@ -120,10 +119,10 @@ const Position = styled.h2`
 `
 
 const Members = styled.ul`
-  margin-top: 10px;
+  margin-top: 8px;
 
   & > li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 3px 5px;
   }
 `
