@@ -107,6 +107,7 @@ const MenuList = styled.ul`
   bottom: 20px;
   width: 100%;
   text-align: center;
+  z-index: 10;
 
   & > li {
     position: relative;

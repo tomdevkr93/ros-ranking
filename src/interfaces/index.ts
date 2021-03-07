@@ -45,6 +45,44 @@ export interface MemberInfo {
   name: string
   avatar: AvatarType
   trophys: Trophy[]
-  record: Record[]
+  records: Record[]
   position: PositionType
+}
+
+export function getCompetitionTitle(type: CompetitionType) {
+  switch (type) {
+    case CompetitionType.OFFICIAL_MATCH:
+      return '공식 단체전'
+    case CompetitionType.PUBLIC:
+      return '일반인전'
+    case CompetitionType.ELITE:
+      return '엘리트전'
+    case CompetitionType.MASTER:
+      return '마스터전'
+    case CompetitionType.ITEM_MATCH:
+      return '아이템 왕중왕'
+  }
+}
+
+export function getPositionTitle(type: PositionType) {
+  switch (type) {
+    case PositionType.MASTER:
+      return '클럽장'
+    case PositionType.SUBMASTER:
+      return '부클럽장'
+    case PositionType.ELITE:
+      return '엘리트'
+    case PositionType.MEMBER:
+      return '클럽원'
+  }
+}
+export function getRankEmoji(rank: number) {
+  switch (rank) {
+    case 1:
+      return '🥇'
+    case 2:
+      return '🥈'
+    case 3:
+      return '🥉'
+  }
 }
