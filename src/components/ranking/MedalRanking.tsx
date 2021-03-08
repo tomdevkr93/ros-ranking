@@ -24,7 +24,7 @@ function MedalRanking() {
       <MedalRankingContainer>
         {sortMembers.map((member, index) => (
           <li key={member.id}>
-            <Ranking>{index + 1}</Ranking>
+            <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
             <Member member={member} visibleTrophyCount={false} />
             <MedalCount>
               <MedalIcon>{'🥇'}</MedalIcon>
@@ -51,7 +51,7 @@ const Title = styled.h2`
 
 const MedalRankingContainer = styled.ul`
   margin: 20px auto 0;
-  width: 90%;
+  width: 95%;
   text-align: center;
 
   li:first-of-type {
@@ -68,11 +68,28 @@ const Ranking = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-right: 8%;
+  margin-right: 6%;
   padding-bottom: 2px;
   font-size: 30px;
-  color: #48586c;
+  font-weight: 300;
+  color: #c1c5c8;
   border-bottom: 2px solid #c1c5c8;
+
+  &.ranker-1 {
+    color: gold;
+    font-weight: bold;
+    border-color: gold;
+  }
+  &.ranker-2 {
+    color: silver;
+    font-weight: bold;
+    border-color: silver;
+  }
+  &.ranker-3 {
+    color: #6a3805;
+    font-weight: bold;
+    border-color: #6a3805;
+  }
 `
 
 const MedalCount = styled.span`
@@ -89,8 +106,9 @@ const MedalIcon = styled.span`
 
 const Count = styled.span`
   display: inline-block;
-  margin: 0 10px 0 2px;
-  color: #868e94;
-  vertical-align: middle;
+  margin: 0 10px 0 1px;
   font-size: 14px;
+  font-weight: 300;
+  color: black;
+  vertical-align: middle;
 `

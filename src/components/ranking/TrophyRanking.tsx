@@ -12,7 +12,7 @@ function TrophyRanking() {
       <TrophyRankingContainer>
         {sortMembers.map((member, index) => (
           <li key={member.id}>
-            <Ranking>{index + 1}</Ranking>
+            <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
             <Member member={member} visibleTrophyCount={false} />
             <TrophyCount>
               {'🏆️'}
@@ -55,8 +55,25 @@ const Ranking = styled.span`
   margin-right: 15%;
   padding-bottom: 2px;
   font-size: 30px;
-  color: #48586c;
+  font-weight: 300;
+  color: #c1c5c8;
   border-bottom: 2px solid #c1c5c8;
+
+  &.ranker-1 {
+    color: gold;
+    font-weight: bold;
+    border-color: gold;
+  }
+  &.ranker-2 {
+    color: silver;
+    font-weight: bold;
+    border-color: silver;
+  }
+  &.ranker-3 {
+    color: #6a3805;
+    font-weight: bold;
+    border-color: #6a3805;
+  }
 `
 
 const TrophyCount = styled.span`
@@ -70,7 +87,8 @@ const TrophyCount = styled.span`
     display: inline-block;
     margin-left: 5px;
     font-size: 16px;
-    color: #868e94;
+    font-weight: 300;
+    color: black;
     vertical-align: middle;
   }
 `
