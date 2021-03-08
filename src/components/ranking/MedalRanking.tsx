@@ -109,6 +109,6 @@ const Count = styled.span`
   margin: 0 10px 0 1px;
   font-size: 14px;
   font-weight: 300;
-  color: black;
+  color: #8a8f9f;
   vertical-align: middle;
 `

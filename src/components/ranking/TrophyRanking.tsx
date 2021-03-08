@@ -88,7 +88,7 @@ const TrophyCount = styled.span`
     margin-left: 5px;
     font-size: 16px;
     font-weight: 300;
-    color: black;
+    color: #8a8f9f;
     vertical-align: middle;
   }
 `
