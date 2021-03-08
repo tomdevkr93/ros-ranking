@@ -1,28 +1,10 @@
 import styled from '@emotion/styled'
-import { useEffect, useState } from 'react'
 import { useRecoilValue } from 'recoil'
-import { MemberInfo } from '../../interfaces'
-import memberAtom from '../../recoil/member/atom'
+import memberWithSort from '../../recoil/member/withSort'
 import Member from '../common/Member'
 
-function compareTrophysCount(x: MemberInfo, y: MemberInfo) {
-  return y.trophys.length - x.trophys.length // DESC
-}
-
 function TrophyRanking() {
-  const members = useRecoilValue(memberAtom)
-  const [sortMembers, setSortMembers] = useState<MemberInfo[]>([])
-
-  useEffect(() => {
-    if (!members || members.length === 0) {
-      return
-    }
-
-    let sortMembers = [...members]
-    sortMembers.sort(compareTrophysCount)
-    sortMembers = sortMembers.filter((member) => member.trophys.length > 0)
-    setSortMembers(sortMembers)
-  }, [members])
+  const sortMembers = useRecoilValue(memberWithSort({ key: 'trophys', orderBy: 'DESC' }))
 
   return (
     <>
@@ -49,7 +31,6 @@ const Title = styled.h2`
   width: 90%;
   margin: 20px auto 0;
   font-size: 20px;
-  font-weight: bold;
 `
 
 const TrophyRankingContainer = styled.ul`
@@ -71,7 +52,7 @@ const Ranking = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-right: 20%;
+  margin-right: 15%;
   padding-bottom: 2px;
   font-size: 30px;
   color: #48586c;
@@ -83,10 +64,13 @@ const TrophyCount = styled.span`
   top: -20px;
   display: inline-block;
   margin-left: 25%;
+  font-size: 25px;
 
   span {
     display: inline-block;
-    margin-left: 8px;
+    margin-left: 5px;
+    font-size: 16px;
     color: #868e94;
+    vertical-align: middle;
   }
 `

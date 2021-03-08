@@ -115,7 +115,6 @@ const MemberList = styled.ul`
 
 const Position = styled.h2`
   font-size: 20px;
-  font-weight: bold;
 `
 
 const Members = styled.ul`

@@ -5,7 +5,7 @@ import { MemberInfo } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
-  visibleTrophyCount: boolean
+  visibleTrophyCount?: boolean
 }
 
 function Member({ member, visibleTrophyCount = true }: Props) {
