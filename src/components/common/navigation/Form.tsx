@@ -35,7 +35,9 @@ function Form() {
     <FormContainer onSubmit={onSubmit}>
       <input type="text" placeholder="닉네임 검색" value={nickName} onChange={onChangeNickname} />
       <Hr />
-      <SearchButton src="/search.png" alt="돋보기 버튼" />
+      <SearchButton>
+        <img src="/search.png" alt="돋보기 버튼" />
+      </SearchButton>
     </FormContainer>
   )
 }
@@ -71,7 +73,7 @@ const FormContainer = styled.form`
 
 const Hr = styled.span`
   position: absolute;
-  right: 55px;
+  right: 60px;
   top: 50%;
   transform: translateY(-50%);
   width: 0.5px;
@@ -79,11 +81,18 @@ const Hr = styled.span`
   background-color: #000000;
 `
 
-const SearchButton = styled.img`
+const SearchButton = styled.button`
   position: absolute;
-  right: 12px;
-  top: 53%;
+  right: 9px;
+  top: 54%;
   transform: translateY(-50%);
-  width: 30px;
   cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+
+  img {
+    width: 30px;
+    height: auto;
+  }
 `
