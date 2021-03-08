@@ -13,7 +13,7 @@ function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover,user-scalable=no"
         />
-        <meta name="description" content="Rose Of Sharon Ranking" />
+        <meta name="description" content="Rose Of Sharon Member Ranking" />
         <meta name="author" content="devho813 <devho813@gmail.com>" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       </Head>

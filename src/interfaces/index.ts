@@ -71,7 +71,7 @@ export function getPositionTitle(type: PositionType) {
     case PositionType.SUBMASTER:
       return '부클럽장'
     case PositionType.ELITE:
-      return '엘리트'
+      return '운영진'
     case PositionType.MEMBER:
       return '클럽원'
   }
