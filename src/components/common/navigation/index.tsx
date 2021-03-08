@@ -133,7 +133,7 @@ const SubMenu = styled.ul<{ showSubMenu: boolean }>`
   visibility: ${({ showSubMenu }) => (showSubMenu ? 'visible' : 'hidden')};
   opacity: ${({ showSubMenu }) => (showSubMenu ? 1 : 0)};
   position: absolute;
-  left: 0;
+  left: -25px;
   top: 40px;
   padding: 0 15px;
   width: 140px;

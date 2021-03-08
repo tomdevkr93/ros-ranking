@@ -119,7 +119,7 @@ const Position = styled.h2`
 `
 
 const Members = styled.ul`
-  margin-top: 8px;
+  margin-top: 10px;
 
   & > li {
     display: inline-block;

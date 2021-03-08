@@ -40,7 +40,7 @@ const TrophysCount = styled.span`
   height: 18px;
   font-size: 10px;
   line-height: 1.8;
-  color: gray;
+  color: black;
   background-color: gold;
   border-radius: 50%;
 `
@@ -54,5 +54,5 @@ const Name = styled.p`
   margin-top: 3px;
   font-size: 10px;
   font-weight: 300;
-  color: #ee8635;
+  color: black;
 `
