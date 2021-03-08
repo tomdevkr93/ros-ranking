@@ -48,8 +48,6 @@ const RecordContainer = styled.ul`
     margin: 20px auto 0;
     width: 100%;
     text-align: center;
-    background-color: #eeeeee;
-    box-shadow: 1px 1px 3px black;
 
     thead {
       font-weight: bold;
