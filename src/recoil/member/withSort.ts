@@ -18,7 +18,7 @@ const compareCount = (key: 'trophys' | 'records', orderBy: 'DESC' | 'ASC') => (x
 const memberWithSort = selectorFamily<MemberInfo[], SortOption>({
   key: 'memberWithSort',
   get: ({ key, orderBy }: SortOption) => ({ get }) => {
-    let members: MemberInfo[] = get(memberAtom)!
+    let members: MemberInfo[] = [...get(memberAtom)!]
     members.sort(compareCount(key, orderBy))
     members = members.filter((member) => member.trophys.length > 0)
     return members
