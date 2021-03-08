@@ -86,3 +86,18 @@ export function getRankEmoji(rank: number) {
       return '🥉'
   }
 }
+
+export function getTrophyImage(type: CompetitionType) {
+  switch (type) {
+    case CompetitionType.OFFICIAL_MATCH:
+      return '/trophys/official_match.png'
+    case CompetitionType.PUBLIC:
+      return '/trophys/public.png'
+    case CompetitionType.ELITE:
+      return '/trophys/elite.png'
+    case CompetitionType.MASTER:
+      return '/trophys/master.png'
+    case CompetitionType.ITEM_MATCH:
+      return '/trophys/item_match.png'
+  }
+}

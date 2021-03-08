@@ -428,25 +428,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 36,
-    name: 'YUJIN',
-    avatar: AvatarType.CHENCHEN,
-    trophys: [
-      {
-        title: CompetitionType.OFFICIAL_MATCH,
-        season: 1,
-      },
-    ],
-    records: [
-      {
-        title: CompetitionType.OFFICIAL_MATCH,
-        season: 1,
-        rank: 1,
-      },
-    ],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 37,
     name: 'NEOGUL',
     avatar: AvatarType.UNI,
     trophys: [],
@@ -454,7 +435,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 38,
+    id: 37,
     name: 'DAOBF',
     avatar: AvatarType.DAO,
     trophys: [],
@@ -462,7 +443,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 39,
+    id: 38,
     name: 'BAPE',
     avatar: AvatarType.DAO,
     trophys: [],
@@ -470,7 +451,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 40,
+    id: 39,
     name: 'LIOKKU',
     avatar: AvatarType.BAZZI,
     trophys: [],
@@ -478,7 +459,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 41,
+    id: 40,
     name: 'ROSE',
     avatar: AvatarType.DAO,
     trophys: [],
@@ -486,7 +467,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 42,
+    id: 41,
     name: 'YABURI',
     avatar: AvatarType.DIZNI,
     trophys: [],
@@ -494,7 +475,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 43,
+    id: 42,
     name: 'LISAKKU',
     avatar: AvatarType.BAZZI,
     trophys: [],
@@ -502,7 +483,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 44,
+    id: 43,
     name: 'JIBALY',
     avatar: AvatarType.BAZZI,
     trophys: [],

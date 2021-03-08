@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
-import { getCompetitionTitle, Trophy } from '../../interfaces'
+import { getCompetitionTitle, getTrophyImage, Trophy } from '../../interfaces'
 
 interface Props {
   trophys: Trophy[]
@@ -19,7 +19,7 @@ function Trophys({ trophys }: Props) {
                   <TrophyDescription>
                     {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
                   </TrophyDescription>
-                  <TrophyIcon>{'🏆'}</TrophyIcon>
+                  <TrophyImage src={getTrophyImage(trophy.title)} />
                 </span>
               )
           )}
@@ -33,7 +33,7 @@ function Trophys({ trophys }: Props) {
                   <TrophyDescription>
                     {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
                   </TrophyDescription>
-                  <TrophyIcon>{'🏆'}</TrophyIcon>
+                  <TrophyImage src={getTrophyImage(trophy.title)} />
                 </span>
               )
           )}
@@ -47,7 +47,7 @@ function Trophys({ trophys }: Props) {
                   <TrophyDescription>
                     {getCompetitionTitle(trophy.title)} (시즌 {trophy.season})
                   </TrophyDescription>
-                  <TrophyIcon>{'🏆'}</TrophyIcon>
+                  <TrophyImage src={getTrophyImage(trophy.title)} />
                 </span>
               )
           )}
@@ -71,28 +71,31 @@ const TrophysContainer = styled.ul`
 `
 
 const FloorContainer = styled.ul`
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
 `
 
 const Floor = styled.li`
-  height: 95px;
+  height: 110px;
   background: url(/shelf.png) no-repeat;
   background-position: center bottom;
-  background-size: 100% 95px;
+  background-size: 100% 110px;
   white-space: pre;
 
   & > span {
-    margin: 0 2.5%;
+    margin: 0 2%;
     display: inline-block;
   }
 `
 
 const TrophyDescription = styled.p`
+  position: relative;
+  top: -3px;
   font-size: 10px;
+  color: #c0392b;
 `
-const TrophyIcon = styled.span`
+
+const TrophyImage = styled.img`
   display: inline-block;
-  margin-top: 12px;
-  font-size: 50px;
+  width: 58px;
 `
