@@ -92,7 +92,7 @@ const TrophyDescription = styled.p`
   position: relative;
   top: -3px;
   font-size: 10px;
-  color:  black;
+  color: black;
 `
 
 const TrophyImage = styled.img`
