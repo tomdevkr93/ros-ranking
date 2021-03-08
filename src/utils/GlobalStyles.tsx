@@ -48,6 +48,12 @@ export const GlobalStyles = (
         -ms-text-size-adjust: none; /*Ie*/
         -o-text-size-adjust: none; /*old versions of Opera*/
       }
+
+      input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
     `}
   />
 )

@@ -83,13 +83,14 @@ const Hr = styled.span`
 
 const SearchButton = styled.button`
   position: absolute;
-  right: 9px;
+  right: 2%;
   top: 54%;
   transform: translateY(-50%);
   cursor: pointer;
   background: none;
   border: none;
   outline: none;
+  text-align: center;
 
   img {
     width: 30px;
