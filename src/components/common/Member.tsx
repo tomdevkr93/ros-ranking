@@ -13,7 +13,7 @@ function Member({ member }: Props) {
   return (
     <Link href={`/member/${id}`}>
       <MemberContainer>
-        <TrophysCount>{trophys.length}</TrophysCount>
+        {trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
         <Avatar src={avatar} />
         <Name>{name}</Name>
       </MemberContainer>
