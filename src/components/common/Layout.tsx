@@ -23,10 +23,10 @@ export default memo(Layout)
 
 const LayoutContainer = styled.div`
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   min-width: 320px;
   max-width: 430px;
-  height: 100%;
+  min-height: 100%;
   background-color: #ffffff;
   box-shadow: 0 0 20px black;
   overflow-x: hidden;
