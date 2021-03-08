@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { useRouter } from 'next/dist/client/router'
 import React from 'react'
 import { useRecoilValue } from 'recoil'
-import memberWithSelect from '../../recoil/member/withSelect'
+import { withSelect } from '../../recoil/member'
 import Info from '../../components/member/Info'
 import Trophys from '../../components/member/Trophys'
 import Records from '../../components/member/Records'
@@ -11,7 +11,7 @@ function MemberPage() {
   const {
     query: { id },
   } = useRouter()
-  const member = useRecoilValue(memberWithSelect(parseInt(id as string)))
+  const member = useRecoilValue(withSelect(parseInt(id as string)))
 
   if (member === undefined) {
     return <MemberContainer>Loading..</MemberContainer>

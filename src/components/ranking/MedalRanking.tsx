@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { useRecoilValue } from 'recoil'
 import { Record } from '../../interfaces'
-import memberWithSort from '../../recoil/member/withSort'
+import { withSort } from '../../recoil/member'
 import Member from '../common/Member'
 
 enum MedalType {
@@ -16,7 +16,7 @@ function getMedalType(records: Record[], type: MedalType) {
 }
 
 function MedalRanking() {
-  const sortMembers = useRecoilValue(memberWithSort({ key: 'records', orderBy: 'DESC' }))
+  const sortMembers = useRecoilValue(withSort({ key: 'records', orderBy: 'DESC' }))
 
   return (
     <>

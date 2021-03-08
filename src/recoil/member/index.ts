@@ -1,6 +1,7 @@
 import atom from './atom'
-// import withBrackets from './withBrackets'
+import withSelect from './withSelect'
+import withSort from './withSort'
 
-// export { withBrackets, withParens }
+export { withSelect, withSort }
 
 export default atom

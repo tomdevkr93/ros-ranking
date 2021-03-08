@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 import { useRecoilValue } from 'recoil'
-import memberWithSort from '../../recoil/member/withSort'
+import { withSort } from '../../recoil/member'
 import Member from '../common/Member'
 
 function TrophyRanking() {
-  const sortMembers = useRecoilValue(memberWithSort({ key: 'trophys', orderBy: 'DESC' }))
+  const sortMembers = useRecoilValue(withSort({ key: 'trophys', orderBy: 'DESC' }))
 
   return (
     <>
