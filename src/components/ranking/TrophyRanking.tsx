@@ -38,13 +38,13 @@ const TrophyRankingContainer = styled.ul`
   width: 90%;
   text-align: center;
 
-  li:first-of-type {
-    border-top: 1px solid #e9e9e9;
-  }
-
   li {
     padding-top: 10px;
-    border-bottom: 1px solid #e9e9e9;
+    border-radius: 15px;
+  }
+
+  li:nth-of-type(2n - 1) {
+    background-color: #eeeeee;
   }
 `
 
@@ -85,10 +85,10 @@ const TrophyCount = styled.span`
 
   span {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 8px;
     font-size: 16px;
     font-weight: 300;
-    color: #8a8f9f;
+    color: #646976;
     vertical-align: middle;
   }
 `

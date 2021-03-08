@@ -54,13 +54,13 @@ const MedalRankingContainer = styled.ul`
   width: 95%;
   text-align: center;
 
-  li:first-of-type {
-    border-top: 1px solid #e9e9e9;
-  }
-
   li {
     padding-top: 10px;
-    border-bottom: 1px solid #e9e9e9;
+    border-radius: 15px;
+  }
+
+  li:nth-of-type(2n - 1) {
+    background-color: #eeeeee;
   }
 `
 
@@ -68,7 +68,7 @@ const Ranking = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-right: 6%;
+  margin-right: 5%;
   padding-bottom: 2px;
   font-size: 30px;
   font-weight: 300;
@@ -96,7 +96,7 @@ const MedalCount = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-left: 10%;
+  margin-left: 8%;
 `
 
 const MedalIcon = styled.span`
@@ -109,6 +109,6 @@ const Count = styled.span`
   margin: 0 10px 0 1px;
   font-size: 14px;
   font-weight: 300;
-  color: #8a8f9f;
+  color: #646976;
   vertical-align: middle;
 `
