@@ -1,13 +1,13 @@
 import styled from '@emotion/styled'
 import React, { memo, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { CompetitionType, QuestionType } from '../../../interfaces'
+import { QuestionType } from '../../../interfaces'
 import Form from './Form'
 import { useRouter } from 'next/dist/client/router'
 
 enum Menu {
   'MEMBER',
-  'COMPETITION',
+  'RANKING',
   'QUESTION',
 }
 
@@ -19,8 +19,8 @@ function Navigation() {
   useEffect(() => {
     if (asPath.indexOf('member') >= 0) {
       setActiveMenu(Menu.MEMBER)
-    } else if (asPath.indexOf('competition') >= 0) {
-      setActiveMenu(Menu.COMPETITION)
+    } else if (asPath.indexOf('ranking') >= 0) {
+      setActiveMenu(Menu.RANKING)
     } else if (asPath.indexOf('question') >= 0) {
       setActiveMenu(Menu.QUESTION)
     }
@@ -47,26 +47,17 @@ function Navigation() {
           </li>
         </Link>
         <li
-          onClick={onClickMenu(Menu.COMPETITION)}
+          onClick={onClickMenu(Menu.RANKING)}
           aria-hidden="true"
-          className={activeMenu === Menu.COMPETITION ? 'active' : ''}
+          className={activeMenu === Menu.RANKING ? 'active' : ''}
         >
-          <h2>로즈샤론내전</h2>
-          <SubMenu showSubMenu={showSubMenu === Menu.COMPETITION}>
-            <Link href={`/competition/${CompetitionType.OFFICIAL_MATCH}`}>
-              <li>· 공식 단체전</li>
+          <h2>로즈샤론랭킹</h2>
+          <SubMenu showSubMenu={showSubMenu === Menu.RANKING}>
+            <Link href={`/ranking/trophy`}>
+              <li>· 트로피 순위</li>
             </Link>
-            <Link href={`/competition/${CompetitionType.PUBLIC}`}>
-              <li>· 일반인</li>
-            </Link>
-            <Link href={`/competition/${CompetitionType.ELITE}`}>
-              <li>· 엘리트</li>
-            </Link>
-            <Link href={`/competition/${CompetitionType.MASTER}`}>
-              <li>· 마스터</li>
-            </Link>
-            <Link href={`/competition/${CompetitionType.ITEM_MATCH}`}>
-              <li>· 아이템 왕중왕</li>
+            <Link href={`/ranking/medal`}>
+              <li>· 메달 순위</li>
             </Link>
           </SubMenu>
         </li>

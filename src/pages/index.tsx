@@ -1,8 +1,15 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import { useRouter } from 'next/dist/client/router'
+import React, { useEffect } from 'react'
 
 function Home() {
-  return <HomeContainer></HomeContainer>
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push('/member')
+  }, [])
+
+  return <HomeContainer>Loading...</HomeContainer>
 }
 
 export default Home

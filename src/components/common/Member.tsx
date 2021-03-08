@@ -5,15 +5,16 @@ import { MemberInfo } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
+  visibleTrophyCount: boolean
 }
 
-function Member({ member }: Props) {
+function Member({ member, visibleTrophyCount = true }: Props) {
   const { id, avatar, name, trophys } = member
 
   return (
     <Link href={`/member/${id}`}>
       <MemberContainer>
-        {trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
+        {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
         <Avatar src={avatar} />
         <Name>{name}</Name>
       </MemberContainer>
