@@ -1,5 +1,5 @@
 import { selectorFamily } from 'recoil'
-import { memberAtom } from './atom'
+import memberAtom from './atom'
 
 const memberWithSelect = selectorFamily({
   key: 'memberWithSelect',

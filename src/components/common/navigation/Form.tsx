@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { useRouter } from 'next/dist/client/router'
 import React, { memo, useCallback, useState } from 'react'
 import { useRecoilValue } from 'recoil'
-import { memberAtom } from '../../../recoil/member/atom'
+import memberAtom from '../../../recoil/member/atom'
 function Form() {
   const [nickName, setNickName] = useState('')
   const members = useRecoilValue(memberAtom)

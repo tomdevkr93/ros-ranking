@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilValue } from 'recoil'
 import Member from '../../components/common/Member'
 import { MemberInfo, PositionType } from '../../interfaces'
-import { memberAtom } from '../../recoil/member/atom'
+import memberAtom from '../../recoil/member/atom'
 
 interface Members {
   master: MemberInfo[]
