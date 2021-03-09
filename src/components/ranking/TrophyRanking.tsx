@@ -10,16 +10,19 @@ function TrophyRanking() {
     <>
       <Title>트로피 순위</Title>
       <TrophyRankingContainer>
-        {sortMembers.map((member, index) => (
-          <li key={member.id}>
-            <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
-            <Member member={member} visibleTrophyCount={false} />
-            <TrophyCount>
-              {'🏆️'}
-              <span>{member.trophys.length}</span>
-            </TrophyCount>
-          </li>
-        ))}
+        {sortMembers.map(
+          (member, index) =>
+            index < 10 && (
+              <li key={member.id}>
+                <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
+                <Member member={member} visibleTrophyCount={false} />
+                <TrophyCount>
+                  {'🏆️'}
+                  <span>{member.trophys.length}</span>
+                </TrophyCount>
+              </li>
+            )
+        )}
       </TrophyRankingContainer>
     </>
   )

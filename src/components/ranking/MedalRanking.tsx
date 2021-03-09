@@ -17,26 +17,31 @@ function getMedalType(records: Record[], type: MedalType) {
 
 function MedalRanking() {
   const sortMembers = useRecoilValue(withSort({ key: 'records', orderBy: 'DESC' }))
-  console.log(sortMembers)
 
   return (
     <>
-      <Title>메달 순위</Title>
+      <Title>
+        <span>메달 순위</span>
+        <p>(메달 개수 순위이며 동점일 경우 클럽 활약도 순으로 배치)</p>
+      </Title>
       <MedalRankingContainer>
-        {sortMembers.map((member, index) => (
-          <li key={member.id}>
-            <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
-            <Member member={member} visibleTrophyCount={false} />
-            <MedalCount>
-              <MedalIcon>{'🥇'}</MedalIcon>
-              <Count>{getMedalType(member.records, MedalType.GOLD)}</Count>
-              <MedalIcon>{'🥈'}</MedalIcon>
-              <Count>{getMedalType(member.records, MedalType.SILVER)}</Count>
-              <MedalIcon>{'🥉'}</MedalIcon>
-              <Count>{getMedalType(member.records, MedalType.BRONZE)}</Count>
-            </MedalCount>
-          </li>
-        ))}
+        {sortMembers.map(
+          (member, index) =>
+            index < 10 && (
+              <li key={member.id}>
+                <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
+                <Member member={member} visibleTrophyCount={false} />
+                <MedalCount>
+                  <MedalIcon>{'🥇'}</MedalIcon>
+                  <Count>{getMedalType(member.records, MedalType.GOLD)}</Count>
+                  <MedalIcon>{'🥈'}</MedalIcon>
+                  <Count>{getMedalType(member.records, MedalType.SILVER)}</Count>
+                  <MedalIcon>{'🥉'}</MedalIcon>
+                  <Count>{getMedalType(member.records, MedalType.BRONZE)}</Count>
+                </MedalCount>
+              </li>
+            )
+        )}
       </MedalRankingContainer>
     </>
   )
@@ -48,6 +53,12 @@ const Title = styled.h2`
   width: 90%;
   margin: 20px auto 0;
   font-size: 20px;
+
+  p {
+    margin-top: 2px;
+    font-size: 11px;
+    color: #646976;
+  }
 `
 
 const MedalRankingContainer = styled.ul`
