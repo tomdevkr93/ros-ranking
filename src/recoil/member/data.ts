@@ -9,6 +9,11 @@ const data: MemberInfo[] = [
     trophys: [],
     records: [
       {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 3,
+      },
+      {
         title: CompetitionType.ITEM_MATCH,
         season: 1,
         rank: 2,
@@ -39,6 +44,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 1,
         rank: 1,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 3,
       },
       {
         title: CompetitionType.ITEM_MATCH,
@@ -89,6 +99,11 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 1,
+        rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
         rank: 3,
       },
     ],
@@ -153,6 +168,11 @@ const data: MemberInfo[] = [
     records: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
         rank: 2,
       },
@@ -208,6 +228,11 @@ const data: MemberInfo[] = [
       },
     ],
     records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 3,
+      },
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
@@ -267,7 +292,13 @@ const data: MemberInfo[] = [
     name: 'JOONAN',
     avatar: AvatarType.MARID,
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 3,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -297,6 +328,11 @@ const data: MemberInfo[] = [
       },
     ],
     records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 3,
+      },
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
@@ -450,7 +486,13 @@ const data: MemberInfo[] = [
     name: 'EOLPPAK',
     avatar: AvatarType.UNI,
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 3,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -490,7 +532,13 @@ const data: MemberInfo[] = [
     name: 'DAOBF',
     avatar: AvatarType.DAO,
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 2,
+        rank: 3,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
