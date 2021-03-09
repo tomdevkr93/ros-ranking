@@ -44,7 +44,7 @@ const TrophyRankingContainer = styled.ul`
   }
 
   li:nth-of-type(2n - 1) {
-    background-color: #eeeeee;
+    background-color: rgb(244 243 243);
   }
 `
 

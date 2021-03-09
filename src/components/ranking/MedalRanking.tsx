@@ -60,7 +60,7 @@ const MedalRankingContainer = styled.ul`
   }
 
   li:nth-of-type(2n - 1) {
-    background-color: #eeeeee;
+    background-color: rgb(244 243 243);
   }
 `
 
@@ -96,7 +96,7 @@ const MedalCount = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-left: 8%;
+  margin-left: 9%;
 `
 
 const MedalIcon = styled.span`
