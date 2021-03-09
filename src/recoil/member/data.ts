@@ -56,6 +56,11 @@ const data: MemberInfo[] = [
         rank: 1,
       },
       {
+        title: CompetitionType.ELITE,
+        season: 1,
+        rank: 2,
+      },
+      {
         title: CompetitionType.PUBLIC,
         season: 2,
         rank: 1,
@@ -265,6 +270,11 @@ const data: MemberInfo[] = [
     records: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
+        season: 1,
+        rank: 3,
+      },
+      {
+        title: CompetitionType.ELITE,
         season: 1,
         rank: 3,
       },
