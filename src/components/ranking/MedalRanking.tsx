@@ -17,6 +17,7 @@ function getMedalType(records: Record[], type: MedalType) {
 
 function MedalRanking() {
   const sortMembers = useRecoilValue(withSort({ key: 'records', orderBy: 'DESC' }))
+  console.log(sortMembers)
 
   return (
     <>
@@ -68,7 +69,7 @@ const Ranking = styled.span`
   position: relative;
   top: -20px;
   display: inline-block;
-  margin-right: 5%;
+  margin-right: 6%;
   padding-bottom: 2px;
   font-size: 30px;
   font-weight: 300;

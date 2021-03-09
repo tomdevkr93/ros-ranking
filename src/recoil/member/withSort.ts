@@ -20,7 +20,7 @@ const memberWithSort = selectorFamily<MemberInfo[], SortOption>({
   get: ({ key, orderBy }: SortOption) => ({ get }) => {
     let members: MemberInfo[] = [...get(memberAtom)!]
     members.sort(compareCount(key, orderBy))
-    members = members.filter((member) => member.trophys.length > 0)
+    members = members.filter((member) => member[key].length > 0)
     return members
   },
 })
