@@ -478,12 +478,22 @@ const data: MemberInfo[] = [
     id: 28,
     name: 'BLANK',
     avatar: AvatarType.DAO,
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.MASTER,
+        season: 5,
+      },
+    ],
     records: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
         rank: 2,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 5,
+        rank: 1,
       },
     ],
     position: PositionType.MEMBER,
