@@ -153,7 +153,7 @@ const GenerateArrow = styled.div`
   }
 `
 const InputNickname = styled.input`
-  margin-top: 40px;
+  margin-top: 30px;
 `
 const OutputNickname = styled.div`
   position: relative;
