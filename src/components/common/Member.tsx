@@ -54,6 +54,5 @@ const Avatar = styled.img`
 const Name = styled.p`
   margin-top: 3px;
   font-size: 10px;
-  font-weight: 300;
   color: black;
 `

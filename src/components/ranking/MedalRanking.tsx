@@ -55,7 +55,7 @@ const Title = styled.h2`
   font-size: 20px;
 
   p {
-    margin-top: 2px;
+    margin-top: 4px;
     font-size: 11px;
     color: #646976;
   }

@@ -23,7 +23,7 @@ export default memo(Layout)
 
 const LayoutContainer = styled.div`
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   min-width: 320px;
   max-width: 430px;
   min-height: 100%;
