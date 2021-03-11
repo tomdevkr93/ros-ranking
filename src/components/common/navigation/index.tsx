@@ -1,14 +1,13 @@
 import styled from '@emotion/styled'
 import React, { memo, useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { QuestionType } from '../../../interfaces'
 import Form from './Form'
 import { useRouter } from 'next/dist/client/router'
 
 enum Menu {
   'MEMBER',
   'RANKING',
-  'QUESTION',
+  'GENERATE',
 }
 
 function Navigation() {
@@ -21,8 +20,8 @@ function Navigation() {
       setActiveMenu(Menu.MEMBER)
     } else if (asPath.indexOf('ranking') >= 0) {
       setActiveMenu(Menu.RANKING)
-    } else if (asPath.indexOf('question') >= 0) {
-      setActiveMenu(Menu.QUESTION)
+    } else if (asPath.indexOf('generate') >= 0) {
+      setActiveMenu(Menu.GENERATE)
     }
   }, [asPath])
 
@@ -38,13 +37,7 @@ function Navigation() {
       <Form />
       <MenuList>
         <Link href="/member">
-          <li
-            onClick={onClickMenu(Menu.MEMBER)}
-            aria-hidden="true"
-            className={activeMenu === Menu.MEMBER ? 'active' : ''}
-          >
-            클럽원
-          </li>
+          <li className={activeMenu === Menu.MEMBER ? 'active' : ''}>클럽원</li>
         </Link>
         <li
           onClick={onClickMenu(Menu.RANKING)}
@@ -61,24 +54,9 @@ function Navigation() {
             </Link>
           </SubMenu>
         </li>
-        <li
-          onClick={onClickMenu(Menu.QUESTION)}
-          aria-hidden="true"
-          className={activeMenu === Menu.QUESTION ? 'active' : ''}
-        >
-          <h2>로즈샤론문의</h2>
-          <SubMenu showSubMenu={showSubMenu === Menu.QUESTION}>
-            <Link href={`/question/${QuestionType.SIGN_UP}`}>
-              <li>· 로즈샤론가입문의</li>
-            </Link>
-            <Link href={`/question/${QuestionType.FRIENDLY_MATCH}`}>
-              <li>· 로즈샤론친선경기</li>
-            </Link>
-            <Link href={`/question/${QuestionType.REPORT}`}>
-              <li>· 로즈샤론비매신고</li>
-            </Link>
-          </SubMenu>
-        </li>
+        <Link href="/generate">
+          <li className={activeMenu === Menu.GENERATE ? 'active' : ''}>닉네임 생성</li>
+        </Link>
       </MenuList>
     </NavigationContainer>
   )

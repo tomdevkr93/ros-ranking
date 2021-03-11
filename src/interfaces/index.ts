@@ -17,12 +17,6 @@ export enum CompetitionType {
   ITEM_MATCH,
 }
 
-export enum QuestionType {
-  SIGN_UP = 1,
-  FRIENDLY_MATCH,
-  REPORT,
-}
-
 export enum PositionType {
   MASTER,
   SUBMASTER,
