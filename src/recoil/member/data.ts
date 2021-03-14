@@ -18,11 +18,6 @@ const data: MemberInfo[] = [
         season: 1,
         rank: 2,
       },
-      {
-        title: CompetitionType.ITEM_MATCH,
-        season: 2,
-        rank: 3,
-      },
     ],
     position: PositionType.MASTER,
   },
@@ -626,13 +621,7 @@ const data: MemberInfo[] = [
     name: 'ROSE',
     avatar: AvatarType.DAO,
     trophys: [],
-    records: [
-      {
-        title: CompetitionType.ITEM_MATCH,
-        season: 2,
-        rank: 3,
-      },
-    ],
+    records: [],
     position: PositionType.MEMBER,
   },
   {
