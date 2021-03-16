@@ -119,7 +119,10 @@ function Generate() {
           <img src="/copy_icon.png" alt="copy icon" aria-hidden="true" onClick={onCopy} />
         </OutputNickname>
       </GenerateContainer>
-      <Welcome src="/welcome.gif" alt="welcome gif" />
+      <Welcome>
+        <img src="/welcome-min.gif" alt="welcome gif" />
+        <p>용량 작아요 (200kb)</p>
+      </Welcome>
     </>
   )
 }
@@ -180,9 +183,18 @@ const OutputNickname = styled.div`
   }
 `
 
-const Welcome = styled.img`
+const Welcome = styled.div`
   margin-top: 70px;
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+  }
 `
