@@ -42,7 +42,7 @@ const TrophyRankingContainer = styled.ul`
   text-align: center;
 
   li {
-    padding-top: 10px;
+    padding-top: 15px;
     border-radius: 15px;
   }
 
