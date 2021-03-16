@@ -50,6 +50,7 @@ const InfoLeft = styled.div`
   img {
     width: 80%;
     border-radius: 50%;
+    box-shadow: 0px 0px 5px #666666;
   }
 `
 const InfoRight = styled.ul`

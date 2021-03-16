@@ -63,6 +63,7 @@ const Avatar = styled.img`
   width: 80%;
   border-radius: 50%;
   z-index: 2;
+  box-shadow: 0px 0px 5px #666666;
 `
 
 const Name = styled.p`
