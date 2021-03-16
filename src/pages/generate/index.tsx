@@ -94,30 +94,33 @@ function Generate() {
   }, [copyState])
 
   return (
-    <GenerateContainer>
-      <h2>로즈샤론 닉네임 생성</h2>
-      <InputNickname
-        type="text"
-        placeholder="닉네임 입력"
-        onChange={onChangeInputNickname}
-        value={inputNickname}
-        pattern="[A-Za-z]+"
-      />
-      <GenerateArrow>
-        <img src="/generate_arrow.png" alt="화살표" />
-      </GenerateArrow>
-      <OutputNickname>
-        <input
-          ref={outputRef}
+    <>
+      <GenerateContainer>
+        <h2>로즈샤론 닉네임 생성</h2>
+        <InputNickname
           type="text"
-          readOnly={true}
-          placeholder="변환 닉네임"
-          value={outputNickname}
-          className={copyState ? 'copy' : ''}
+          placeholder="닉네임 입력"
+          onChange={onChangeInputNickname}
+          value={inputNickname}
+          pattern="[A-Za-z]+"
         />
-        <img src="/copy_icon.png" alt="copy icon" aria-hidden="true" onClick={onCopy} />
-      </OutputNickname>
-    </GenerateContainer>
+        <GenerateArrow>
+          <img src="/generate_arrow.png" alt="화살표" />
+        </GenerateArrow>
+        <OutputNickname>
+          <input
+            ref={outputRef}
+            type="text"
+            readOnly={true}
+            placeholder="변환 닉네임"
+            value={outputNickname}
+            className={copyState ? 'copy' : ''}
+          />
+          <img src="/copy_icon.png" alt="copy icon" aria-hidden="true" onClick={onCopy} />
+        </OutputNickname>
+      </GenerateContainer>
+      <Welcome src="/welcome.gif" alt="welcome gif" />
+    </>
   )
 }
 
@@ -175,4 +178,11 @@ const OutputNickname = styled.div`
     transform: translateY(-50%);
     cursor: pointer;
   }
+`
+
+const Welcome = styled.img`
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 `
