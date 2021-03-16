@@ -1,4 +1,4 @@
-import { CompetitionType, MemberInfo } from './../../interfaces/index'
+import { CompetitionType, EntitleType, MemberInfo } from './../../interfaces/index'
 import { AvatarType, PositionType } from '../../interfaces/index'
 
 const data: MemberInfo[] = [
@@ -6,6 +6,7 @@ const data: MemberInfo[] = [
     id: 1,
     name: 'RYANG-A',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -25,6 +26,7 @@ const data: MemberInfo[] = [
     id: 2,
     name: 'HONEYMOON',
     avatar: AvatarType.BAZZI,
+    entitles: [EntitleType.PUBLIC],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -72,6 +74,7 @@ const data: MemberInfo[] = [
     id: 3,
     name: 'PUPPY',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -80,6 +83,7 @@ const data: MemberInfo[] = [
     id: 4,
     name: 'SASAK',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -99,6 +103,7 @@ const data: MemberInfo[] = [
     id: 5,
     name: 'SIBSUNBI',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -123,6 +128,7 @@ const data: MemberInfo[] = [
     id: 6,
     name: 'BARAM',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.ITEM_MATCH,
@@ -147,6 +153,7 @@ const data: MemberInfo[] = [
     id: 7,
     name: 'RIGEL',
     avatar: AvatarType.MARID,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -161,6 +168,7 @@ const data: MemberInfo[] = [
     id: 8,
     name: 'BAMBOO',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -169,6 +177,7 @@ const data: MemberInfo[] = [
     id: 9,
     name: 'JIZZANG',
     avatar: AvatarType.CHENCHEN,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.PUBLIC,
@@ -198,6 +207,7 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.MASTER,
@@ -231,6 +241,7 @@ const data: MemberInfo[] = [
     id: 11,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -255,6 +266,7 @@ const data: MemberInfo[] = [
     id: 12,
     name: 'LEMON',
     avatar: AvatarType.ETHAN,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -263,6 +275,7 @@ const data: MemberInfo[] = [
     id: 13,
     name: 'TERA',
     avatar: AvatarType.DIZNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -271,6 +284,7 @@ const data: MemberInfo[] = [
     id: 14,
     name: 'RUFA',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -285,6 +299,7 @@ const data: MemberInfo[] = [
     id: 15,
     name: 'BLACK',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -293,6 +308,7 @@ const data: MemberInfo[] = [
     id: 16,
     name: 'ICEKING',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -301,6 +317,7 @@ const data: MemberInfo[] = [
     id: 17,
     name: 'JOONAN',
     avatar: AvatarType.MARID,
+    entitles: [EntitleType.ITEM_MATCH],
     trophys: [
       {
         title: CompetitionType.ITEM_MATCH,
@@ -325,6 +342,7 @@ const data: MemberInfo[] = [
     id: 18,
     name: 'MINZHILY',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -333,6 +351,7 @@ const data: MemberInfo[] = [
     id: 19,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -375,6 +394,7 @@ const data: MemberInfo[] = [
     id: 20,
     name: 'LEGEND',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -389,6 +409,7 @@ const data: MemberInfo[] = [
     id: 21,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -408,6 +429,7 @@ const data: MemberInfo[] = [
     id: 22,
     name: 'SUNNY',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -416,6 +438,7 @@ const data: MemberInfo[] = [
     id: 23,
     name: 'STYLE',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -430,6 +453,7 @@ const data: MemberInfo[] = [
     id: 24,
     name: 'TT',
     avatar: AvatarType.BAZZI,
+    entitles: [EntitleType.ELITE],
     trophys: [
       {
         title: CompetitionType.ELITE,
@@ -449,6 +473,7 @@ const data: MemberInfo[] = [
     id: 25,
     name: 'RUMA',
     avatar: AvatarType.DIZNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -457,6 +482,7 @@ const data: MemberInfo[] = [
     id: 26,
     name: 'JOONGSA',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -465,6 +491,7 @@ const data: MemberInfo[] = [
     id: 27,
     name: 'CURATOR',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -473,6 +500,7 @@ const data: MemberInfo[] = [
     id: 28,
     name: 'BLANK',
     avatar: AvatarType.DAO,
+    entitles: [EntitleType.MASTER],
     trophys: [
       {
         title: CompetitionType.MASTER,
@@ -497,6 +525,7 @@ const data: MemberInfo[] = [
     id: 29,
     name: 'ELLIS',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -505,6 +534,7 @@ const data: MemberInfo[] = [
     id: 30,
     name: 'ZZANGA',
     avatar: AvatarType.BAZZI,
+    entitles: [EntitleType.ITEM_MATCH],
     trophys: [
       {
         title: CompetitionType.ITEM_MATCH,
@@ -524,6 +554,7 @@ const data: MemberInfo[] = [
     id: 31,
     name: 'EOLPPAK',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -538,6 +569,7 @@ const data: MemberInfo[] = [
     id: 32,
     name: 'JISU',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -546,6 +578,7 @@ const data: MemberInfo[] = [
     id: 33,
     name: 'IPHONE',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -554,6 +587,7 @@ const data: MemberInfo[] = [
     id: 34,
     name: 'BAZZI',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -568,6 +602,7 @@ const data: MemberInfo[] = [
     id: 35,
     name: 'NEOGUL',
     avatar: AvatarType.UNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -576,6 +611,7 @@ const data: MemberInfo[] = [
     id: 36,
     name: 'DAOBF',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -590,6 +626,7 @@ const data: MemberInfo[] = [
     id: 37,
     name: 'BAPE',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -598,6 +635,7 @@ const data: MemberInfo[] = [
     id: 38,
     name: 'LIOKKU',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [
       {
@@ -612,6 +650,7 @@ const data: MemberInfo[] = [
     id: 39,
     name: 'ROSE',
     avatar: AvatarType.DAO,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -620,6 +659,7 @@ const data: MemberInfo[] = [
     id: 40,
     name: 'YABURI',
     avatar: AvatarType.DIZNI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -628,6 +668,7 @@ const data: MemberInfo[] = [
     id: 41,
     name: 'LISAKKU',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -636,6 +677,7 @@ const data: MemberInfo[] = [
     id: 42,
     name: 'JIBALY',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -644,6 +686,7 @@ const data: MemberInfo[] = [
     id: 43,
     name: 'MUYAHO',
     avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -652,6 +695,7 @@ const data: MemberInfo[] = [
     id: 44,
     name: 'ZUTOMAYO',
     avatar: AvatarType.ETHAN,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -660,6 +704,7 @@ const data: MemberInfo[] = [
     id: 45,
     name: 'LIFE',
     avatar: AvatarType.RODUMANI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
@@ -668,6 +713,25 @@ const data: MemberInfo[] = [
     id: 46,
     name: 'BAMBI',
     avatar: AvatarType.UNI,
+    entitles: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 47,
+    name: 'INCORNER',
+    avatar: AvatarType.BAZZI,
+    entitles: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 48,
+    name: 'NANA',
+    avatar: AvatarType.BAZZI,
+    entitles: [],
     trophys: [],
     records: [],
     position: PositionType.MEMBER,

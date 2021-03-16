@@ -34,10 +34,19 @@ export interface Record {
   season: number
   rank: number
 }
+
+export enum EntitleType {
+  PUBLIC = '일반인전 1대장',
+  ELITE = '엘리트전 1대장',
+  MASTER = '마스터전 1대장',
+  ITEM_MATCH = '아이템전 1대장',
+}
+
 export interface MemberInfo {
   id: number
   name: string
   avatar: AvatarType
+  entitles: EntitleType[]
   trophys: Trophy[]
   records: Record[]
   position: PositionType

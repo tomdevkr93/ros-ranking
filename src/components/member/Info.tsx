@@ -7,7 +7,7 @@ interface Props {
 }
 
 function Info({ member }: Props) {
-  const { avatar, id, name, position } = member
+  const { avatar, entitles, name, position } = member
 
   return (
     <InfoContainer>
@@ -16,13 +16,19 @@ function Info({ member }: Props) {
       </InfoLeft>
       <InfoRight>
         <li>
-          <h3>ID:</h3> <span>{id}</span>
-        </li>
-        <li>
           <h3>캐릭터 명:</h3> <span>{name}</span>
         </li>
         <li>
           <h3>포지션:</h3> <span>{getPositionTitle(position)}</span>
+        </li>
+        <li>
+          <h3>칭호:</h3>&nbsp;
+          {entitles.map((entitle, index) => (
+            <Entitle key={entitle}>
+              {entitle}
+              {entitles.length - 1 !== index && ', '}
+            </Entitle>
+          ))}
         </li>
       </InfoRight>
     </InfoContainer>
@@ -65,4 +71,8 @@ const InfoRight = styled.ul`
       color: #ee8635;
     }
   }
+`
+
+const Entitle = styled.span`
+  font-size: 12px !important;
 `

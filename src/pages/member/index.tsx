@@ -122,6 +122,6 @@ const Members = styled.ul`
 
   & > li {
     display: inline-block;
-    margin: 3px 5px;
+    margin: 8px 2px;
   }
 `

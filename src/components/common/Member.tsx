@@ -9,14 +9,15 @@ interface Props {
 }
 
 function Member({ member, visibleTrophyCount = true }: Props) {
-  const { id, avatar, name, trophys } = member
+  const { id, avatar, name, trophys, entitles } = member
 
   return (
     <Link href={`/member/${id}`}>
       <MemberContainer>
+        {entitles.length > 0 && <Crown src="/crown.png" alt="왕관이미지" />}
         {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
         <Avatar src={avatar} />
-        <Name>{name}</Name>
+        <Name className={entitles.length > 0 ? 'king' : ''}>{name}</Name>
       </MemberContainer>
     </Link>
   )
@@ -32,11 +33,21 @@ const MemberContainer = styled.span`
   cursor: pointer;
 `
 
+const Crown = styled.img`
+  position: absolute;
+  width: 35px;
+  height: auto;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+`
+
 const TrophysCount = styled.span`
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 15px;
   width: 18px;
   height: 18px;
   font-size: 10px;
@@ -44,15 +55,22 @@ const TrophysCount = styled.span`
   color: black;
   background-color: gold;
   border-radius: 50%;
+  z-index: 3;
 `
 
 const Avatar = styled.img`
+  position: relative;
   width: 80%;
   border-radius: 50%;
+  z-index: 2;
 `
 
 const Name = styled.p`
   margin-top: 3px;
   font-size: 10px;
   color: black;
+
+  &.king {
+    color: #d35400;
+  }
 `
