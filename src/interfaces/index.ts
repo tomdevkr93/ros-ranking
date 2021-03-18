@@ -36,10 +36,11 @@ export interface Record {
 }
 
 export enum EntitleType {
-  PUBLIC = '일반인전 1대장',
-  ELITE = '엘리트전 1대장',
-  MASTER = '마스터전 1대장',
-  ITEM_MATCH = '아이템전 1대장',
+  OFFICIAL_MATCH = '공식 경기 1대장',
+  PUBLIC = '일반인 1대장',
+  ELITE = '엘리트 1대장',
+  MASTER = '마스터 1대장',
+  ITEM_MATCH = '아이템 1대장',
 }
 
 export interface MemberInfo {

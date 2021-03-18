@@ -241,7 +241,7 @@ const data: MemberInfo[] = [
     id: 11,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -351,7 +351,7 @@ const data: MemberInfo[] = [
     id: 19,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -409,7 +409,7 @@ const data: MemberInfo[] = [
     id: 21,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
