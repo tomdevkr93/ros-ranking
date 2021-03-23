@@ -40,7 +40,7 @@ const Crown = styled.img`
   position: absolute;
   width: 35px;
   height: auto;
-  top: -12px;
+  top: -23px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -50,7 +50,7 @@ const Graduate = styled.span`
   position: absolute;
   left: 0;
   bottom: 16px;
-  padding: 3px 3px 2px;
+  padding: 3px 3px 1px;
   font-size: 12px;
   border-radius: 50%;
   background-color: black;
