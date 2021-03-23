@@ -15,7 +15,7 @@ function TrophyRanking() {
             index < 10 && (
               <li key={member.id}>
                 <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
-                <Member member={member} visibleTrophyCount={false} />
+                <Member member={member} visibleCrown={false} visibleGraduate={false} visibleTrophyCount={false} />
                 <TrophyCount>
                   {'🏆️'}
                   <span>{member.trophys.length}</span>

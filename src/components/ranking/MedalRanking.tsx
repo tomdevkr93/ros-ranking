@@ -30,7 +30,7 @@ function MedalRanking() {
             index < 10 && (
               <li key={member.id}>
                 <Ranking className={index + 1 <= 3 ? `ranker-${index + 1}` : ''}>{index + 1}</Ranking>
-                <Member member={member} visibleTrophyCount={false} />
+                <Member member={member} visibleCrown={false} visibleGraduate={false} visibleTrophyCount={false} />
                 <MedalCount>
                   <MedalIcon>{'🥇'}</MedalIcon>
                   <Count>{getMedalType(member.records, MedalType.GOLD)}</Count>

@@ -5,20 +5,22 @@ import { MemberInfo } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
+  visibleCrown?: boolean
+  visibleGraduate?: boolean
   visibleTrophyCount?: boolean
 }
 
-function Member({ member, visibleTrophyCount = true }: Props) {
+function Member({ member, visibleCrown = true, visibleGraduate = true, visibleTrophyCount = true }: Props) {
   const { id, avatar, name, trophys, entitles, graduates } = member
 
   return (
     <Link href={`/member/${id}`}>
       <MemberContainer>
-        {entitles.length > 0 && <Crown src="/crown.png" alt="왕관이미지" />}
-        {graduates.length > 0 && <Graduate>졸</Graduate>}
+        {visibleCrown && entitles.length > 0 && <Crown src="/crown.png" alt="왕관이미지" />}
+        {visibleGraduate && graduates.length > 0 && <Graduate>졸</Graduate>}
         {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
         <Avatar src={avatar} />
-        <Name className={entitles.length > 0 ? 'king' : ''}>{name}</Name>
+        <Name className={visibleTrophyCount && entitles.length > 0 ? 'king' : ''}>{name}</Name>
       </MemberContainer>
     </Link>
   )
