@@ -48,7 +48,7 @@ const Graduate = styled.span`
   position: absolute;
   left: 0;
   bottom: 16px;
-  padding: 3px;
+  padding: 3px 3px 2px;
   font-size: 12px;
   border-radius: 50%;
   background-color: black;
