@@ -7,7 +7,7 @@ interface Props {
 }
 
 function Info({ member }: Props) {
-  const { avatar, entitles, name, position } = member
+  const { avatar, entitles, graduates, name, position } = member
 
   return (
     <InfoContainer>
@@ -28,6 +28,13 @@ function Info({ member }: Props) {
               {entitle}
               {entitles.length - 1 !== index && ', '}
             </Entitle>
+          ))}
+          {graduates.map((graduate, inx) => (
+            <Graduate key={graduate}>
+              {entitles.length > 0 && inx === 0 && ', '}
+              {graduate}
+              {graduates.length - 1 !== inx && ', '}
+            </Graduate>
           ))}
         </li>
       </InfoRight>
@@ -76,4 +83,11 @@ const InfoRight = styled.ul`
 
 const Entitle = styled.span`
   font-size: 12px !important;
+  font-weight: bold;
+`
+
+const Graduate = styled.span`
+  font-size: 12px !important;
+  color: #2c3e50 !important;
+  font-weight: bold;
 `

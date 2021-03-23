@@ -43,11 +43,18 @@ export enum EntitleType {
   ITEM_MATCH = '아이템 1대장',
 }
 
+export enum Graduate {
+  PUBLIC = '일반인 졸업자',
+  ELITE = '엘리트 졸업자',
+  MASTER = '마스터 졸업자',
+}
+
 export interface MemberInfo {
   id: number
   name: string
   avatar: AvatarType
   entitles: EntitleType[]
+  graduates: Graduate[]
   trophys: Trophy[]
   records: Record[]
   position: PositionType
