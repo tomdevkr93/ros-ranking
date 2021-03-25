@@ -7,6 +7,7 @@ export enum AvatarType {
   RODUMANI = '/avatar/RODUMANI.png',
   MARID = '/avatar/MARID.png',
   CHENCHEN = '/avatar/CHENCHEN.png',
+  RABBIT = '/avatar/RABBIT.png',
 }
 
 export enum CompetitionType {

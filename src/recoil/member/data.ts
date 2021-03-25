@@ -132,7 +132,7 @@ const data: MemberInfo[] = [
   {
     id: 6,
     name: 'BARAM',
-    avatar: AvatarType.UNI,
+    avatar: AvatarType.DAO,
     entitles: [],
     graduates: [],
     trophys: [
@@ -158,7 +158,7 @@ const data: MemberInfo[] = [
   {
     id: 7,
     name: 'RIGEL',
-    avatar: AvatarType.MARID,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -276,7 +276,7 @@ const data: MemberInfo[] = [
   {
     id: 12,
     name: 'LEMON',
-    avatar: AvatarType.ETHAN,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -358,7 +358,7 @@ const data: MemberInfo[] = [
   {
     id: 18,
     name: 'MINZHILY',
-    avatar: AvatarType.BAZZI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -412,7 +412,7 @@ const data: MemberInfo[] = [
   {
     id: 20,
     name: 'LEGEND',
-    avatar: AvatarType.DAO,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -449,7 +449,7 @@ const data: MemberInfo[] = [
   {
     id: 22,
     name: 'SUNNY',
-    avatar: AvatarType.BAZZI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -459,7 +459,7 @@ const data: MemberInfo[] = [
   {
     id: 23,
     name: 'STYLE',
-    avatar: AvatarType.BAZZI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -475,7 +475,7 @@ const data: MemberInfo[] = [
   {
     id: 24,
     name: 'TT',
-    avatar: AvatarType.BAZZI,
+    avatar: AvatarType.RABBIT,
     entitles: [EntitleType.ELITE],
     graduates: [],
     trophys: [
@@ -516,7 +516,7 @@ const data: MemberInfo[] = [
   {
     id: 27,
     name: 'CURATOR',
-    avatar: AvatarType.UNI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -757,7 +757,7 @@ const data: MemberInfo[] = [
   {
     id: 46,
     name: 'BAMBI',
-    avatar: AvatarType.UNI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -777,7 +777,7 @@ const data: MemberInfo[] = [
   {
     id: 48,
     name: 'NANA',
-    avatar: AvatarType.BAZZI,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -788,6 +788,26 @@ const data: MemberInfo[] = [
     id: 49,
     name: 'SAEKOM',
     avatar: AvatarType.BAZZI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 50,
+    name: 'SEVENSIX',
+    avatar: AvatarType.BAZZI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 51,
+    name: 'SHARK',
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
