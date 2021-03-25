@@ -476,7 +476,7 @@ const data: MemberInfo[] = [
     id: 24,
     name: 'TT',
     avatar: AvatarType.RABBIT,
-    entitles: [EntitleType.ELITE],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -748,10 +748,21 @@ const data: MemberInfo[] = [
     id: 45,
     name: 'LIFE',
     avatar: AvatarType.RODUMANI,
-    entitles: [],
+    entitles: [EntitleType.ELITE],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.ELITE,
+        season: 2,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.ELITE,
+        season: 2,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
