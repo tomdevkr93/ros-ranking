@@ -369,7 +369,7 @@ const data: MemberInfo[] = [
     id: 19,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [EntitleType.OFFICIAL_MATCH, EntitleType.MASTER],
     graduates: [],
     trophys: [
       {
@@ -383,6 +383,10 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 4,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 6,
       },
     ],
     records: [
@@ -404,6 +408,11 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 4,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 6,
         rank: 1,
       },
     ],
@@ -527,7 +536,7 @@ const data: MemberInfo[] = [
     id: 28,
     name: 'BLANK',
     avatar: AvatarType.DAO,
-    entitles: [EntitleType.MASTER],
+    entitles: [],
     graduates: [],
     trophys: [
       {
