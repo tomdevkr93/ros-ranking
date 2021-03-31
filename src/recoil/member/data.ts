@@ -729,16 +729,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 43,
-    name: 'ZUTOMAYO',
-    avatar: AvatarType.ETHAN,
-    entitles: [],
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 44,
     name: 'LIFE',
     avatar: AvatarType.RODUMANI,
     entitles: [EntitleType.ELITE],
@@ -759,7 +749,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 45,
+    id: 44,
     name: 'BAMBI',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -769,7 +759,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 46,
+    id: 45,
     name: 'INCORNER',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -779,7 +769,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 47,
+    id: 46,
     name: 'NANA',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -789,7 +779,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 48,
+    id: 47,
     name: 'SAEKOM',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -799,7 +789,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 49,
+    id: 48,
     name: 'SEVENSIX',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -809,7 +799,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 50,
+    id: 49,
     name: 'BORI',
     avatar: AvatarType.BAZZI,
     entitles: [],
