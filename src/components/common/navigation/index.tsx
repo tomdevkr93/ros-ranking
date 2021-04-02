@@ -44,8 +44,11 @@ function Navigation() {
           aria-hidden="true"
           className={activeMenu === Menu.RANKING ? 'active' : ''}
         >
-          <h2>로즈샤론랭킹</h2>
+          <h2>로즈샤론정보</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.RANKING}>
+            {/* <Link href={`/ranking/friendly-match`}>
+              <li>· 친선 경기</li>
+            </Link> */}
             <Link href={`/ranking/trophy`}>
               <li>· 트로피 순위</li>
             </Link>

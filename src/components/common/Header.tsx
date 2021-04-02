@@ -7,7 +7,7 @@ function Header() {
       <Title>
         <p>카트라이더 러쉬플러스</p>
         <img src="/rosbi.png" alt="ros bi" />
-        <span>RYANG-A.ROS</span>
+        <span>BARAM.ROS</span>
       </Title>
       <OpentalkLink href="https://open.kakao.com/o/gEsPpHpc" target="_blank">
         <img src="/kakaotalk.svg" alt="kakaotalk logo" />
@@ -52,7 +52,7 @@ const Title = styled.h1`
   span {
     float: right;
     margin-top: 0.2em;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     color: #646464;
   }
