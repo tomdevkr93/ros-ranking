@@ -95,16 +95,16 @@ const Team = styled.span`
   font-size: 12px;
   font-weight: bold;
 `
-const Score = styled.p`
-  margin-top: 8px;
-  font-size: 20px;
-  font-weight: lighter;
-`
+// const Score = styled.p`
+//   margin-top: 8px;
+//   font-size: 20px;
+//   font-weight: lighter;
+// `
 
 const Result = styled.span`
   display: inline-block;
-  /* width: 18%; */
   font-size: 20px;
+  vertical-align: middle;
 
   &.win {
     color: #1a78ae;
