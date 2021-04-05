@@ -67,9 +67,6 @@ const FriendlyMatchContainer = styled.section`
     margin: 20px auto 0;
     font-size: 20px;
   }
-
-  & > img {
-  }
 `
 
 const Arrow = styled.div`
