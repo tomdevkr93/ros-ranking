@@ -71,7 +71,7 @@ const FriendlyMatchContainer = styled.section`
 
 const Arrow = styled.div`
   position: absolute;
-  right: 40px;
+  right: 8%;
   top: -5px;
 
   img {
