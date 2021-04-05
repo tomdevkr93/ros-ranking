@@ -11,7 +11,7 @@ function FriendlyMatch() {
       <MatchList>
         {[...matches!].reverse().map((match, index) => (
           <li key={match.id} className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
-            <Times>{matches!.length - index} 경기</Times>
+            <Times>{matches!.length - index}경기</Times>
             <Left>
               <Type>{match.type}</Type>
               <Date>{match.date}</Date>
@@ -67,7 +67,7 @@ const MatchList = styled.ul`
     background-color: #e2b6b3;
   }
 `
-const Times = styled.div`
+const Times = styled.p`
   position: absolute;
   left: 8px;
   top: 8px;
