@@ -20,9 +20,9 @@ function FriendlyMatch() {
               <Team>
                 {match.team[0]} VS {match.team[1]}
               </Team>
-              <Score>
+              {/* <Score>
                 {match.score[0]}&nbsp;&nbsp;:&nbsp;&nbsp;{match.score[1]}
-              </Score>
+              </Score> */}
             </Center>
             <Result className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
               {match.score[0] > match.score[1] ? '승리' : '패배'}
