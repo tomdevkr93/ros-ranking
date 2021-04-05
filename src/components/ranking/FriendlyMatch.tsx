@@ -1,35 +1,57 @@
 import styled from '@emotion/styled'
+import { useCallback, useMemo, useState } from 'react'
 import { useRecoilValue } from 'recoil'
 import friendMatchAtom from '../../recoil/friendly-match/atom'
+import withPaging from '../../recoil/friendly-match/withPaging'
+
+export const MAX_PAGE_MATCH_ITEM = 7
 
 function FriendlyMatch() {
-  const matches = useRecoilValue(friendMatchAtom)
+  const [page, setPage] = useState(1)
+  const matches = useRecoilValue(withPaging(page))
+  const matchLength = useRecoilValue(friendMatchAtom)?.length
+
+  const getMatchList = useCallback(() => {
+    return matches.map((match) => {
+      const result = match.score[0] > match.score[1] ? 'win' : 'lose'
+
+      return (
+        <li key={match.id} className={result}>
+          <Times>{match.id}경기</Times>
+          <Left>
+            <Type>{match.type}</Type>
+            <Date>{match.date}</Date>
+          </Left>
+          <Center>
+            <Team>
+              {match.team[0]} VS {match.team[1]}
+            </Team>
+          </Center>
+          <Result className={result}>{match.score[0] > match.score[1] ? '승리' : '패배'}</Result>
+        </li>
+      )
+    })
+  }, [matches])
+
+  const onClickArrow = useCallback(
+    (direction: 'LEFT' | 'RIGHT') => () => {
+      if (direction === 'LEFT' && page > 1) {
+        setPage((prevState) => prevState - 1)
+      } else if (direction === 'RIGHT' && page < matchLength! / MAX_PAGE_MATCH_ITEM) {
+        setPage((prevState) => prevState + 1)
+      }
+    },
+    [page]
+  )
 
   return (
     <FriendlyMatchContainer>
       <h1>친선 경기 정보</h1>
-      <MatchList>
-        {[...matches!].reverse().map((match, index) => (
-          <li key={match.id} className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
-            <Times>{matches!.length - index}경기</Times>
-            <Left>
-              <Type>{match.type}</Type>
-              <Date>{match.date}</Date>
-            </Left>
-            <Center>
-              <Team>
-                {match.team[0]} VS {match.team[1]}
-              </Team>
-              {/* <Score>
-                {match.score[0]}&nbsp;&nbsp;:&nbsp;&nbsp;{match.score[1]}
-              </Score> */}
-            </Center>
-            <Result className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
-              {match.score[0] > match.score[1] ? '승리' : '패배'}
-            </Result>
-          </li>
-        ))}
-      </MatchList>
+      <Arrow>
+        <img src="/page_arrow.png" alt="prev list" onClick={onClickArrow('LEFT')} />
+        <img src="/page_arrow.png" alt="next list" onClick={onClickArrow('RIGHT')} />
+      </Arrow>
+      <MatchList>{useMemo(() => getMatchList(), [matches])}</MatchList>
     </FriendlyMatchContainer>
   )
 }
@@ -37,12 +59,39 @@ function FriendlyMatch() {
 export default FriendlyMatch
 
 const FriendlyMatchContainer = styled.section`
+  position: relative;
   width: 100%;
 
   h1 {
     width: 90%;
     margin: 20px auto 0;
     font-size: 20px;
+  }
+
+  & > img {
+  }
+`
+
+const Arrow = styled.div`
+  position: absolute;
+  right: 40px;
+  top: -5px;
+
+  img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* left, prev */
+  img:first-of-type {
+    margin-right: 15px;
+  }
+
+  /* right, next */
+  img:last-of-type {
+    transform: rotate(180deg);
   }
 `
 
@@ -95,11 +144,6 @@ const Team = styled.span`
   font-size: 12px;
   font-weight: bold;
 `
-// const Score = styled.p`
-//   margin-top: 8px;
-//   font-size: 20px;
-//   font-weight: lighter;
-// `
 
 const Result = styled.span`
   display: inline-block;
