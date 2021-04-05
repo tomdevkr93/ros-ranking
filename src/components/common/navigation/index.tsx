@@ -46,9 +46,9 @@ function Navigation() {
         >
           <h2>로즈샤론정보</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.RANKING}>
-            {/* <Link href={`/ranking/friendly-match`}>
+            <Link href={`/ranking/friendly-match`}>
               <li>· 친선 경기</li>
-            </Link> */}
+            </Link>
             <Link href={`/ranking/trophy`}>
               <li>· 트로피 순위</li>
             </Link>

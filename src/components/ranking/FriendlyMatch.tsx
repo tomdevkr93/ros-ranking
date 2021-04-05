@@ -1,58 +1,35 @@
 import styled from '@emotion/styled'
+import { useRecoilValue } from 'recoil'
+import friendMatchAtom from '../../recoil/friendly-match/atom'
 
 function FriendlyMatch() {
+  const matches = useRecoilValue(friendMatchAtom)
+
   return (
     <FriendlyMatchContainer>
-      <Match>
-        <h2>아이템 전 갤러리</h2>
-        <ul>
-          <MatchWrapper>
-            <img src="/friendly_match_test.jpeg" alt="테스트 이미지" />
-            <MatchDetail>
-              <Date>2021.4.2 (금) PM 2:00</Date>
-              <ul>
-                <Team>
-                  <span>로즈 샤론</span>
-                  <span>Apink</span>
-                </Team>
-                <Score>
-                  <span>3</span>
-                  <span>2</span>
-                </Score>
-                <Result>
-                  <span className="win">승</span>
-                  <span>패</span>
-                </Result>
-              </ul>
-            </MatchDetail>
-          </MatchWrapper>
-        </ul>
-      </Match>
-      <Match>
-        <h2>스피드 전 갤러리</h2>
-        <ul>
-          <MatchWrapper>
-            <img src="/friendly_match_test.jpeg" alt="테스트 이미지" />
-            <MatchDetail>
-              <Date>2021.4.2 (금) PM 2:00</Date>
-              <ul>
-                <Team>
-                  <span>로즈 샤론</span>
-                  <span>Apink</span>
-                </Team>
-                <Score>
-                  <span>3</span>
-                  <span>2</span>
-                </Score>
-                <Result>
-                  <span className="win">승</span>
-                  <span>패</span>
-                </Result>
-              </ul>
-            </MatchDetail>
-          </MatchWrapper>
-        </ul>
-      </Match>
+      <h1>친선 경기 정보</h1>
+      <MatchList>
+        {[...matches!].reverse().map((match, index) => (
+          <li key={match.id} className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
+            <Times>{matches!.length - index} 경기</Times>
+            <Left>
+              <Type>{match.type}</Type>
+              <Date>{match.date}</Date>
+            </Left>
+            <Center>
+              <Team>
+                {match.team[0]} VS {match.team[1]}
+              </Team>
+              <Score>
+                {match.score[0]}&nbsp;&nbsp;:&nbsp;&nbsp;{match.score[1]}
+              </Score>
+            </Center>
+            <Result className={match.score[0] > match.score[1] ? 'win' : 'lose'}>
+              {match.score[0] > match.score[1] ? '승리' : '패배'}
+            </Result>
+          </li>
+        ))}
+      </MatchList>
     </FriendlyMatchContainer>
   )
 }
@@ -61,93 +38,80 @@ export default FriendlyMatch
 
 const FriendlyMatchContainer = styled.section`
   width: 100%;
-`
 
-const Match = styled.div`
-  margin-top: 30px;
-
-  h2 {
-    margin: 20px 0;
-    text-align: center;
+  h1 {
+    width: 90%;
+    margin: 20px auto 0;
     font-size: 20px;
   }
-
-  & > ul {
-    width: 100%;
-  }
 `
 
-const MatchWrapper = styled.li`
-  position: relative;
-  width: 100%;
+const MatchList = styled.ul`
+  margin: 20px auto 0;
+  width: 90%;
 
-  img {
-    width: 100%;
-  }
-`
-
-const MatchDetail = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-
-  ul {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+  li {
+    position: relative;
     text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px 10px 15px;
+    color: #2d2d2d;
+  }
 
-    li {
-      width: 100%;
+  li.win {
+    background-color: #a3cfec;
+  }
 
-      span {
-        display: inline-block;
-        width: 25%;
-      }
-
-      span:last-of-type {
-        margin-left: 50px;
-      }
-    }
+  li.lose {
+    background-color: #e2b6b3;
   }
 `
-
-const Date = styled.p`
+const Times = styled.div`
   position: absolute;
-  left: 50%;
-  top: 15px;
-  transform: translateX(-50%);
-  font-size: 13px;
-  font-weight: lighter;
+  left: 8px;
+  top: 8px;
+  font-size: 10px;
 `
 
-const Team = styled.li`
+const Left = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+`
+const Type = styled.span`
+  font-size: 14px;
+`
+const Date = styled.p`
+  margin-top: 5px;
+  font-size: 11px;
+`
+
+const Center = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+`
+const Team = styled.span`
+  font-size: 12px;
+  font-weight: bold;
+`
+const Score = styled.p`
+  margin-top: 8px;
   font-size: 20px;
   font-weight: lighter;
 `
 
-const Score = styled.li`
-  font-size: 18px;
-  font-weight: lighter;
-  margin: 3px 0 15px;
-`
+const Result = styled.span`
+  display: inline-block;
+  width: 26%;
+  font-size: 20px;
 
-const Result = styled.li`
-  font-size: 30px;
-  font-weight: bold;
-
-  span {
-    color: #1e8df9;
+  &.win {
+    color: #1a78ae;
   }
 
-  span.win {
-    color: #f93345;
+  &.lose {
+    color: #c6443e;
   }
 `
-

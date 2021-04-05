@@ -113,3 +113,16 @@ export function getTrophyImage(type: CompetitionType) {
       return '/trophys/item_match.png'
   }
 }
+
+export interface FriendMatch {
+  id: number;
+  type: string;
+  date: string;
+  team: ['로즈샤론', string];
+  score: [number, number];
+}
+
+export enum FriendMatchType {
+  SPEED = '스피드',
+  ITEM = '아이템'
+}
