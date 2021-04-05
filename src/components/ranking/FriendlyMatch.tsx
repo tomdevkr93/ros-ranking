@@ -55,7 +55,7 @@ const MatchList = styled.ul`
     text-align: center;
     margin-top: 10px;
     border-radius: 5px;
-    padding: 20px 10px 15px;
+    padding: 20px 5px 15px;
     color: #2d2d2d;
   }
 
@@ -77,7 +77,6 @@ const Times = styled.p`
 const Left = styled.div`
   display: inline-block;
   vertical-align: middle;
-  width: 33%;
 `
 const Type = styled.span`
   font-size: 14px;
@@ -90,7 +89,7 @@ const Date = styled.p`
 const Center = styled.div`
   display: inline-block;
   vertical-align: middle;
-  width: 40%;
+  width: 45%;
 `
 const Team = styled.span`
   font-size: 12px;
@@ -104,7 +103,7 @@ const Score = styled.p`
 
 const Result = styled.span`
   display: inline-block;
-  width: 26%;
+  /* width: 18%; */
   font-size: 20px;
 
   &.win {
