@@ -714,7 +714,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 41,
-    name: 'SEVENSIX',
+    name: 'BLUE',
     avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
