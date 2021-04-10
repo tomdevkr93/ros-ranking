@@ -132,7 +132,7 @@ const data: MemberInfo[] = [
   {
     id: 6,
     name: 'BARAM',
-    avatar: AvatarType.DIZNI,
+    avatar: AvatarType.DAO,
     entitles: [],
     graduates: [],
     trophys: [
