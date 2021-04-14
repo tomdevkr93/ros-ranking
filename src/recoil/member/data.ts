@@ -27,7 +27,7 @@ const data: MemberInfo[] = [
     id: 2,
     name: 'HONEYMOON',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.PUBLIC],
+    entitles: [],
     graduates: [Graduate.PUBLIC],
     trophys: [
       {
@@ -428,18 +428,27 @@ const data: MemberInfo[] = [
     id: 20,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [EntitleType.OFFICIAL_MATCH, EntitleType.PUBLIC],
     graduates: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
       },
+      {
+        title: CompetitionType.PUBLIC,
+        season: 3,
+      },
     ],
     records: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.PUBLIC,
+        season: 3,
         rank: 1,
       },
     ],
@@ -776,6 +785,16 @@ const data: MemberInfo[] = [
     id: 47,
     name: 'HUNJANG',
     avatar: AvatarType.BAZZI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 48,
+    name: 'DOGUN',
+    avatar: AvatarType.DIZNI,
     entitles: [],
     graduates: [],
     trophys: [],
