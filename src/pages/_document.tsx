@@ -13,7 +13,7 @@ class MyDocument extends Document {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACE_ID}');
+          gtag('config', 'G-P1PB0LHBYM');
         `,
     }
   }
@@ -22,7 +22,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACE_ID}`} />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=G-P1PB0LHBYM`} />
           <script dangerouslySetInnerHTML={this.addGoogleAnalyticsScript()} />
         </Head>
         <body>
