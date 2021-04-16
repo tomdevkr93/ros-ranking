@@ -43,6 +43,13 @@ const data: FriendMatch[] = [
     score: [3, 7],
     team: ['로즈샤론', 'After'],
   },
+  {
+    id: 7,
+    type: FriendMatchType.ITEM,
+    date: '2021.4.15 (목) 21:00',
+    score: [3, 7],
+    team: ['로즈샤론', '유머일번지'],
+  },
 ]
 
 export default data
