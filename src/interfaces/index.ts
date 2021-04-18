@@ -120,6 +120,7 @@ export interface FriendMatch {
   date: string;
   team: ['로즈샤론', string];
   score: [number, number];
+  members: string[];
 }
 
 export enum FriendMatchType {

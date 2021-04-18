@@ -3,6 +3,7 @@ import { useCallback, useMemo, useState } from 'react'
 import { useRecoilValue } from 'recoil'
 import friendMatchAtom from '../../recoil/friendly-match/atom'
 import withPaging from '../../recoil/friendly-match/withPaging'
+import MatchMebers from './MatchMembers'
 
 export const MAX_PAGE_MATCH_ITEM = 7
 
@@ -26,6 +27,7 @@ function FriendlyMatch() {
             <Team>
               {match.team[0]} VS {match.team[1]}
             </Team>
+            {match.members.length > 0 && <MatchMebers members={match.members} />}
           </Center>
           <Result className={result}>{match.score[0] > match.score[1] ? '승리' : '패배'}</Result>
         </li>
@@ -96,7 +98,7 @@ const MatchList = styled.ul`
   margin: 20px auto 0;
   width: 90%;
 
-  li {
+  & > li {
     position: relative;
     text-align: center;
     margin-top: 10px;
@@ -105,11 +107,11 @@ const MatchList = styled.ul`
     color: #2d2d2d;
   }
 
-  li.win {
+  & > li.win {
     background-color: #a3cfec;
   }
 
-  li.lose {
+  & > li.lose {
     background-color: #e2b6b3;
   }
 `
@@ -133,12 +135,13 @@ const Date = styled.p`
 `
 
 const Center = styled.div`
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 45%;
 `
-const Team = styled.span`
-  font-size: 12px;
+const Team = styled.p`
+  font-size: 11px;
   font-weight: bold;
 `
 
