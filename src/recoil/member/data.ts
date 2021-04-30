@@ -359,7 +359,7 @@ const data: MemberInfo[] = [
     id: 18,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.OFFICIAL_MATCH, EntitleType.MASTER],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     graduates: [],
     trophys: [
       {
@@ -515,7 +515,7 @@ const data: MemberInfo[] = [
     id: 25,
     name: 'BLANK',
     avatar: AvatarType.DAO,
-    entitles: [],
+    entitles: [EntitleType.MASTER],
     graduates: [],
     trophys: [
       {
