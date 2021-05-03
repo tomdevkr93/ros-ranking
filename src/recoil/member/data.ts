@@ -206,7 +206,7 @@ const data: MemberInfo[] = [
     id: 9,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.MASTER],
     graduates: [],
     trophys: [
       {
@@ -216,6 +216,10 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 3,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 8,
       },
     ],
     records: [
@@ -232,6 +236,11 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 3,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 8,
         rank: 1,
       },
     ],
@@ -515,7 +524,7 @@ const data: MemberInfo[] = [
     id: 25,
     name: 'BLANK',
     avatar: AvatarType.DAO,
-    entitles: [EntitleType.MASTER],
+    entitles: [],
     graduates: [],
     trophys: [
       {
