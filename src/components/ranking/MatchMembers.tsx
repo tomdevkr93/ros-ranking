@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import React, { memo, useCallback, useState } from 'react'
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react'
 
 interface Props {
   members: string[]
@@ -7,22 +7,39 @@ interface Props {
 
 function MatchMebers({ members }: Props) {
   const [showMemberList, setShowMemberList] = useState(false)
+  const container = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+    }
+  }, [showMemberList])
+
+  const handleClickOutside = useCallback(
+    ({ target }) => {
+      if (showMemberList && !container.current?.contains(target)) {
+        setShowMemberList(false)
+      }
+    },
+    [showMemberList]
+  )
 
   const onClickButton = useCallback(() => {
-    setShowMemberList(prevState => !prevState)
+    setShowMemberList((prevState) => !prevState)
   }, [])
 
   return (
-    <>
+    <div ref={container}>
       <Member onClick={onClickButton}>[참가 멤버]</Member>
       {showMemberList && (
         <MemberList>
           {members.map((member) => (
-            <li>😎&nbsp;&nbsp;{member}</li>
+            <li key={member}>😎&nbsp;&nbsp;{member}</li>
           ))}
         </MemberList>
       )}
-    </>
+    </div>
   )
 }
 
