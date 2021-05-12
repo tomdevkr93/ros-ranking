@@ -27,12 +27,16 @@ const data: MemberInfo[] = [
     id: 2,
     name: 'HONEYMOON',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     graduates: [Graduate.PUBLIC],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 1,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
       },
       {
         title: CompetitionType.ITEM_MATCH,
@@ -53,6 +57,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
         rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 1,
       },
       {
         title: CompetitionType.ITEM_MATCH,
@@ -99,6 +108,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 1,
         rank: 1,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 2,
       },
     ],
     position: PositionType.MASTER,
@@ -148,6 +162,11 @@ const data: MemberInfo[] = [
         rank: 3,
       },
       {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
+      },
+      {
         title: CompetitionType.ITEM_MATCH,
         season: 1,
         rank: 1,
@@ -163,6 +182,11 @@ const data: MemberInfo[] = [
     graduates: [],
     trophys: [],
     records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 2,
+      },
       {
         title: CompetitionType.ITEM_MATCH,
         season: 1,
@@ -193,6 +217,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
         rank: 2,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
       },
       {
         title: CompetitionType.PUBLIC,
@@ -250,7 +279,7 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -268,6 +297,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
         rank: 1,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
       },
     ],
     position: PositionType.SUBMASTER,
@@ -305,6 +339,11 @@ const data: MemberInfo[] = [
         season: 1,
         rank: 3,
       },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
+      },
     ],
     position: PositionType.MEMBER,
   },
@@ -320,12 +359,18 @@ const data: MemberInfo[] = [
   },
   {
     id: 15,
-    name: 'ICEKING',
+    name: 'HUAN',
     avatar: AvatarType.DAO,
     entitles: [],
     graduates: [],
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -344,6 +389,11 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
+        rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
         rank: 3,
       },
       {
@@ -368,7 +418,7 @@ const data: MemberInfo[] = [
     id: 18,
     name: 'BORADOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -437,7 +487,7 @@ const data: MemberInfo[] = [
     id: 20,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.OFFICIAL_MATCH, EntitleType.PUBLIC],
+    entitles: [EntitleType.PUBLIC],
     graduates: [],
     trophys: [
       {
@@ -467,10 +517,20 @@ const data: MemberInfo[] = [
     id: 21,
     name: 'STYLE',
     avatar: AvatarType.RABBIT,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     graduates: [],
-    trophys: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+      },
+    ],
     records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 1,
+      },
       {
         title: CompetitionType.ITEM_MATCH,
         season: 2,
@@ -492,6 +552,11 @@ const data: MemberInfo[] = [
       },
     ],
     records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 2,
+      },
       {
         title: CompetitionType.ELITE,
         season: 1,
@@ -540,6 +605,11 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
+        rank: 2,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
         rank: 2,
       },
       {
@@ -609,7 +679,13 @@ const data: MemberInfo[] = [
     entitles: [],
     graduates: [],
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 3,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -703,10 +779,21 @@ const data: MemberInfo[] = [
     id: 37,
     name: 'BAMBI',
     avatar: AvatarType.RABBIT,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -743,10 +830,21 @@ const data: MemberInfo[] = [
     id: 41,
     name: 'SNOW',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 3,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
