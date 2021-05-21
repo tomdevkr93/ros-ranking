@@ -937,6 +937,16 @@ const data: MemberInfo[] = [
     records: [],
     position: PositionType.MEMBER,
   },
+  {
+    id: 51,
+    name: 'THUNDER',
+    avatar: AvatarType.DIZNI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
 ]
 
 export default data
