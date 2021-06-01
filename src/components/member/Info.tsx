@@ -90,4 +90,5 @@ const Graduate = styled.span`
   font-size: 12px !important;
   color: #2c3e50 !important;
   font-weight: bold;
+  vertical-align: middle;
 `

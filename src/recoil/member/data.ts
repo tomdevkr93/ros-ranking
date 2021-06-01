@@ -21,7 +21,7 @@ const data: MemberInfo[] = [
         rank: 2,
       },
     ],
-    position: PositionType.MEMBER,
+    position: PositionType.MASTER,
   },
   {
     id: 2,
@@ -115,7 +115,7 @@ const data: MemberInfo[] = [
         rank: 2,
       },
     ],
-    position: PositionType.MASTER,
+    position: PositionType.MEMBER,
   },
   {
     id: 5,
@@ -889,8 +889,8 @@ const data: MemberInfo[] = [
   },
   {
     id: 46,
-    name: 'SPRING',
-    avatar: AvatarType.DAO,
+    name: 'JAMIEE',
+    avatar: AvatarType.DIZNI,
     entitles: [],
     graduates: [],
     trophys: [],
