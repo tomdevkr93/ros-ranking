@@ -890,7 +890,7 @@ const data: MemberInfo[] = [
   {
     id: 46,
     name: 'JAMIEE',
-    avatar: AvatarType.DIZNI,
+    avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
     trophys: [],
