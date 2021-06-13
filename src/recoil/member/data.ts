@@ -477,7 +477,7 @@ const data: MemberInfo[] = [
     id: 19,
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.PUBLIC],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -841,6 +841,25 @@ const data: MemberInfo[] = [
     id: 44,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
+    entitles: [EntitleType.PUBLIC],
+    graduates: [],
+    trophys: [
+      {
+        title: CompetitionType.PUBLIC,
+        season: 4,
+      },
+    ],
+    records: [{
+      title: CompetitionType.PUBLIC,
+      season: 4,
+      rank: 1,
+    },],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 45,
+    name: 'COMZZANG',
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -848,9 +867,9 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 45,
-    name: 'COMZZANG',
-    avatar: AvatarType.RABBIT,
+    id: 46,
+    name: 'DDAKGON',
+    avatar: AvatarType.UNI,
     entitles: [],
     graduates: [],
     trophys: [],
