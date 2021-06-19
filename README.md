@@ -2,4 +2,4 @@
 
 ### 기술 스택
 
-#next.js #emotion.js #recoil #typescript
+#react #next.js #emotion.js #recoil #typescript
