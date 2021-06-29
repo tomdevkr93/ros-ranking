@@ -837,7 +837,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 44,
+    id: 43,
     name: 'COMZZANG',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -847,7 +847,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 45,
+    id: 44,
     name: 'DDAKGON',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -857,7 +857,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 46,
+    id: 45,
     name: 'MOZZY',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -867,7 +867,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 47,
+    id: 46,
     name: 'SUNNY',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -877,7 +877,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 48,
+    id: 47,
     name: 'MUNGMUNG',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -887,7 +887,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 49,
+    id: 48,
     name: 'TUNA',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -897,7 +897,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 50,
+    id: 49,
     name: 'MANGMANG',
     avatar: AvatarType.MARID,
     entitles: [],
