@@ -48,6 +48,7 @@ export enum Graduate {
   PUBLIC = '일반인 졸업자',
   ELITE = '엘리트 졸업자',
   MASTER = '마스터 졸업자',
+  CLUB_MASTER = '클럽장 졸업자',
 }
 
 export interface MemberInfo {

@@ -111,7 +111,7 @@ const data: MemberInfo[] = [
     name: 'SASAK',
     avatar: AvatarType.UNI,
     entitles: [],
-    graduates: [],
+    graduates: [Graduate.CLUB_MASTER],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
