@@ -269,7 +269,7 @@ const data: MemberInfo[] = [
     id: 9,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.MASTER],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -313,12 +313,16 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [],
+    entitles: [EntitleType.MASTER],
     graduates: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 2,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 9,
       },
     ],
     records: [
@@ -336,6 +340,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 3,
         rank: 3,
+      },
+      {
+        title: CompetitionType.MASTER,
+        season: 9,
+        rank: 1
       },
     ],
     position: PositionType.SUBMASTER,
