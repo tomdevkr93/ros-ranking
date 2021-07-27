@@ -94,7 +94,7 @@ const data: MemberInfo[] = [
         rank: 1,
       },
     ],
-    position: PositionType.SUBMASTER,
+    position: PositionType.MEMBER,
   },
   {
     id: 3,
@@ -500,7 +500,7 @@ const data: MemberInfo[] = [
         rank: 1,
       },
     ],
-    position: PositionType.ELITE,
+    position: PositionType.MEMBER,
   },
   {
     id: 19,
