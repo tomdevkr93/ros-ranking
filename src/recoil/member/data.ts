@@ -31,7 +31,7 @@ const data: MemberInfo[] = [
         rank: 1
       },
     ],
-    position: PositionType.MASTER,
+    position: PositionType.MEMBER,
   },
   {
     id: 2,
@@ -130,7 +130,7 @@ const data: MemberInfo[] = [
         rank: 2,
       },
     ],
-    position: PositionType.MEMBER,
+    position: PositionType.SUBMASTER,
   },
   {
     id: 5,
@@ -461,7 +461,7 @@ const data: MemberInfo[] = [
         rank: 2,
       },
     ],
-    position: PositionType.ELITE,
+    position: PositionType.MASTER,
   },
   {
     id: 18,
@@ -552,7 +552,7 @@ const data: MemberInfo[] = [
         rank: 1,
       },
     ],
-    position: PositionType.MEMBER,
+    position: PositionType.ELITE,
   },
   {
     id: 21,
