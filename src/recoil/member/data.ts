@@ -31,7 +31,7 @@ const data: MemberInfo[] = [
         rank: 1
       },
     ],
-    position: PositionType.MEMBER,
+    position: PositionType.ELITE,
   },
   {
     id: 2,
