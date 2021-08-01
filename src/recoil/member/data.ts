@@ -695,16 +695,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 32,
-    name: 'MAPLE',
-    avatar: AvatarType.DIZNI,
-    entitles: [],
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 33,
     name: 'SSOMACK',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -714,7 +704,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 34,
+    id: 33,
     name: 'JAMIEE',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -724,7 +714,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 35,
+    id: 34,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
     entitles: [EntitleType.PUBLIC],
@@ -743,7 +733,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 36,
+    id: 35,
     name: 'COMZZANG',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -753,7 +743,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 37,
+    id: 36,
     name: 'DDAKGON',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -763,7 +753,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 38,
+    id: 37,
     name: 'MOZZY',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -773,7 +763,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 39,
+    id: 38,
     name: 'SUNNY',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -783,7 +773,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 40,
+    id: 39,
     name: 'MUNGMUNG',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -793,7 +783,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 41,
+    id: 40,
     name: 'TUNA',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -803,7 +793,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 42,
+    id: 41,
     name: 'MANGMANG',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -813,7 +803,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 43,
+    id: 42,
     name: 'WITTY',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -823,9 +813,9 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 44,
-    name: 'V',
-    avatar: AvatarType.BAZZI,
+    id: 43,
+    name: 'BAMBI',
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
