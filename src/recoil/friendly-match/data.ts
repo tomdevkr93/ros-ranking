@@ -129,6 +129,14 @@ const data: FriendMatch[] = [
     team: ['로즈샤론', 'FLOWER'],
     members: ['BAMBI', 'TT', 'DETAIL', 'LEGEND'],
   },
+  {
+    id: 17,
+    type: FriendMatchType.SPEED,
+    date: '2021.8.15 (일요일) 23:00',
+    score: [7, 6],
+    team: ['로즈샤론', 'Wakku'],
+    members: ['WITTY', 'DETAIL', 'TAEYEON', 'BARAM'],
+  },
 ]
 
 export default data
