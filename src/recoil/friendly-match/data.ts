@@ -137,6 +137,30 @@ const data: FriendMatch[] = [
     team: ['로즈샤론', 'Wakku'],
     members: ['WITTY', 'DETAIL', 'TAEYEON', 'BARAM'],
   },
+  {
+    id: 18,
+    type: FriendMatchType.SPEED,
+    date: '2021.8.16 (월요일) 19:00',
+    score: [7, 1],
+    team: ['로즈샤론', '맥도날드'],
+    members: ['WITTY', 'TAEYEON', 'TT', 'JIZZANG'],
+  },
+  {
+    id: 19,
+    type: FriendMatchType.SPEED,
+    date: '2021.8.16 (월요일) 21:00',
+    score: [7, 0],
+    team: ['로즈샤론', '맥도날드'],
+    members: ['WITTY', 'TAEYEON', 'TT', 'JIZZANG'],
+  },
+  {
+    id: 20,
+    type: FriendMatchType.ITEM,
+    date: '2021.8.16 (월요일) 23:00',
+    score: [7, 1],
+    team: ['로즈샤론', '맥도날드'],
+    members: ['DETAIL', 'LEGEND', 'WITTY', 'TT'],
+  },
 ]
 
 export default data
