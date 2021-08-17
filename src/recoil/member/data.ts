@@ -28,7 +28,7 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.ITEM_MATCH,
         season: 3,
-        rank: 1
+        rank: 1,
       },
     ],
     position: PositionType.ELITE,
@@ -255,7 +255,7 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.ITEM_MATCH,
         season: 3,
-        rank: 1
+        rank: 1,
       },
       {
         title: CompetitionType.PUBLIC,
@@ -344,7 +344,7 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 9,
-        rank: 1
+        rank: 1,
       },
     ],
     position: PositionType.SUBMASTER,
@@ -466,7 +466,7 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.ITEM_MATCH,
         season: 3,
-        rank: 1
+        rank: 1,
       },
       {
         title: CompetitionType.PUBLIC,
@@ -634,19 +634,30 @@ const data: MemberInfo[] = [
     id: 28,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
-    entitles: [EntitleType.PUBLIC],
+    entitles: [EntitleType.PUBLIC, EntitleType.ELITE],
     graduates: [],
     trophys: [
+      {
+        title: CompetitionType.ELITE,
+        season: 4,
+      },
       {
         title: CompetitionType.PUBLIC,
         season: 4,
       },
     ],
-    records: [{
-      title: CompetitionType.PUBLIC,
-      season: 4,
-      rank: 1,
-    },],
+    records: [
+      {
+        title: CompetitionType.ELITE,
+        season: 4,
+        rank: 1,
+      },
+      {
+        title: CompetitionType.PUBLIC,
+        season: 4,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
