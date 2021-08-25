@@ -47,7 +47,7 @@ function Navigation() {
           <h2>로즈샤론정보</h2>
           <SubMenu showSubMenu={showSubMenu === Menu.RANKING}>
             <Link href={`/ranking/friendly-match`}>
-              <li>· 친선 경기</li>
+              <li>· 친선 경기(기록 중단)</li>
             </Link>
             <Link href={`/ranking/trophy`}>
               <li>· 트로피 순위</li>
@@ -107,7 +107,7 @@ const SubMenu = styled.ul<{ showSubMenu: boolean }>`
   position: absolute;
   left: -25px;
   top: 40px;
-  padding: 0 15px;
+  padding: 0 9px;
   width: 140px;
   color: #666666;
   text-align: left;
