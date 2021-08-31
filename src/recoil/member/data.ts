@@ -313,7 +313,7 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.MASTER],
+    entitles: [],
     graduates: [],
     trophys: [
       {
@@ -888,6 +888,27 @@ const data: MemberInfo[] = [
     graduates: [],
     trophys: [],
     records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 52,
+    name: 'JERRY',
+    avatar: AvatarType.BAZZI,
+    entitles: [EntitleType.MASTER],
+    graduates: [],
+    trophys: [
+      {
+        title: CompetitionType.MASTER,
+        season: 10,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.MASTER,
+        season: 10,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
 ]
