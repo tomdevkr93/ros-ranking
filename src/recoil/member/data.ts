@@ -634,7 +634,7 @@ const data: MemberInfo[] = [
     id: 28,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
-    entitles: [EntitleType.PUBLIC, EntitleType.ELITE],
+    entitles: [EntitleType.ELITE],
     graduates: [],
     trophys: [
       {
@@ -754,10 +754,21 @@ const data: MemberInfo[] = [
     id: 38,
     name: 'JJONG',
     avatar: AvatarType.CHENCHEN,
-    entitles: [],
+    entitles: [EntitleType.PUBLIC],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.PUBLIC,
+        season: 5,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.PUBLIC,
+        season: 5,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -1024,10 +1035,21 @@ const data: MemberInfo[] = [
     id: 65,
     name: 'KAI',
     avatar: AvatarType.DIZNI,
-    entitles: [],
+    entitles: [EntitleType.MASTER],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.MASTER,
+        season: 10,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.MASTER,
+        season: 10,
+        rank: 1,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
