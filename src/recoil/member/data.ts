@@ -313,7 +313,7 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [],
+    entitles: [EntitleType.MASTER],
     graduates: [],
     trophys: [
       {
@@ -862,27 +862,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 49,
-    name: 'JERRY',
-    avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.MASTER],
-    graduates: [],
-    trophys: [
-      {
-        title: CompetitionType.MASTER,
-        season: 10,
-      },
-    ],
-    records: [
-      {
-        title: CompetitionType.MASTER,
-        season: 10,
-        rank: 1,
-      },
-    ],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 50,
     name: 'DUKSU',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -892,7 +871,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 51,
+    id: 50,
     name: 'STUSSY',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -902,7 +881,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 52,
+    id: 51,
     name: 'JD',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -912,7 +891,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 53,
+    id: 52,
     name: 'TAZZA',
     avatar: AvatarType.RODUMANI,
     entitles: [],
@@ -922,7 +901,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 54,
+    id: 53,
     name: 'SSAM',
     avatar: AvatarType.RODUMANI,
     entitles: [],
@@ -932,7 +911,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 55,
+    id: 54,
     name: 'HAMGJUNG',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -942,7 +921,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 56,
+    id: 55,
     name: 'NEWBIE',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -952,7 +931,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 57,
+    id: 56,
     name: 'E',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -962,7 +941,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 58,
+    id: 57,
     name: 'GONZU',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -972,7 +951,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 59,
+    id: 58,
     name: 'WANZA',
     avatar: AvatarType.ETHAN,
     entitles: [],
@@ -982,7 +961,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 60,
+    id: 59,
     name: 'MEINESES',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -992,7 +971,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 61,
+    id: 60,
     name: 'UJA',
     avatar: AvatarType.RODUMANI,
     entitles: [],
@@ -1002,7 +981,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 62,
+    id: 61,
     name: 'APPLE',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1012,7 +991,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 63,
+    id: 62,
     name: 'LADOONG',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1022,7 +1001,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 64,
+    id: 63,
     name: 'GIRORO',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1032,7 +1011,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 65,
+    id: 64,
     name: 'LALA',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -1042,7 +1021,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 66,
+    id: 65,
     name: 'KAI',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1052,7 +1031,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 67,
+    id: 66,
     name: 'LULU',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -1062,8 +1041,18 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 68,
+    id: 67,
     name: 'DODEE',
+    avatar: AvatarType.BAZZI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 68,
+    name: 'NABAL',
     avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
