@@ -67,7 +67,7 @@ function Generate() {
   const outputRef = useRef<HTMLInputElement>(null)
 
   const onChangeInputNickname = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const nickname = e.target.value.replace(/[^A-Za-z.]/gi, '') // 영문만 입력
+    const nickname = e.target.value.replace(/[^a-zA-Zㄱ-힣.]/gi, '') // 영문만 입력
     setInputNickname(nickname)
 
     setOutput(nickname)
@@ -102,7 +102,7 @@ function Generate() {
           placeholder="닉네임 입력"
           onChange={onChangeInputNickname}
           value={inputNickname}
-          pattern="[A-Za-z]+"
+          pattern="[a-zA-Zㄱ-힣.]+"
         />
         <GenerateArrow>
           <img src="/generate_arrow.png" alt="화살표" />
