@@ -67,7 +67,7 @@ function Generate() {
   const outputRef = useRef<HTMLInputElement>(null)
 
   const onChangeInputNickname = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const nickname = e.target.value.replace(/[^a-zA-Zㄱ-힣.]/gi, '') // 영문만 입력
+    const nickname = e.target.value.replace(/[^a-zA-Zㄱ-힣]/gi, '') // 영문만 입력
     setInputNickname(nickname)
 
     setOutput(nickname)
@@ -80,7 +80,12 @@ function Generate() {
       /(A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z)/g,
       replaceNickname
     )
-    setOutputNickname(resultNickname)
+
+    if(resultNickname){
+      setOutputNickname(resultNickname+".ʀᴏѕ")
+    } else {
+      setOutputNickname("")
+    }
   }, [])
 
   const onCopy = useCallback(() => {
@@ -102,7 +107,7 @@ function Generate() {
           placeholder="닉네임 입력"
           onChange={onChangeInputNickname}
           value={inputNickname}
-          pattern="[a-zA-Zㄱ-힣.]+"
+          pattern="[a-zA-Zㄱ-힣]+"
         />
         <GenerateArrow>
           <img src="/generate_arrow.png" alt="화살표" />
