@@ -487,7 +487,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 16,
-    name: 'DETAIL',
+    name: '우주',
     avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
