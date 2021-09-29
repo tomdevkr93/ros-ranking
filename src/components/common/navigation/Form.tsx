@@ -33,7 +33,7 @@ function Form() {
 
   return (
     <FormContainer onSubmit={onSubmit}>
-      <input type="text" placeholder="닉네임 검색" value={nickName} onChange={onChangeNickname} />
+      <input type="text" placeholder="클럽원 검색" value={nickName} onChange={onChangeNickname} />
       <Hr />
       <SearchButton>
         <img src="/search.png" alt="돋보기 버튼" />
