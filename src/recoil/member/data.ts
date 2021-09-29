@@ -1082,7 +1082,7 @@ const data: MemberInfo[] = [
   {
     id: 64,
     name: 'HOLIC',
-    avatar: AvatarType.DIZNI,
+    avatar: AvatarType.MARID,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -1092,7 +1092,7 @@ const data: MemberInfo[] = [
   {
     id: 65,
     name: 'SIA',
-    avatar: AvatarType.DIZNI,
+    avatar: AvatarType.DAO,
     entitles: [],
     graduates: [],
     trophys: [],
