@@ -870,7 +870,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 44,
-    name: 'TAZZA',
+    name: '타짜',
     avatar: AvatarType.RODUMANI,
     entitles: [],
     graduates: [],
@@ -880,7 +880,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 45,
-    name: 'SSAM',
+    name: '정쌤',
     avatar: AvatarType.RODUMANI,
     entitles: [],
     graduates: [],
@@ -910,7 +910,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 48,
-    name: 'E',
+    name: '철봉',
     avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
@@ -920,7 +920,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 49,
-    name: 'GONZU',
+    name: '지공',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
     graduates: [],
@@ -930,7 +930,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 50,
-    name: 'WANZA',
+    name: '상공',
     avatar: AvatarType.ETHAN,
     entitles: [],
     graduates: [],
@@ -970,7 +970,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 54,
-    name: 'LADOONG',
+    name: '라둥',
     avatar: AvatarType.DAO,
     entitles: [],
     graduates: [],
@@ -990,7 +990,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 56,
-    name: 'LALA',
+    name: '랄라',
     avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
@@ -1021,7 +1021,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 58,
-    name: 'LULU',
+    name: '룰루',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
     graduates: [],
