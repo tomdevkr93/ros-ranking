@@ -850,7 +850,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 42,
-    name: 'DUKSU',
+    name: '덕구',
     avatar: AvatarType.MARID,
     entitles: [],
     graduates: [],
