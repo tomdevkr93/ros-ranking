@@ -1021,16 +1021,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 58,
-    name: 'HOLIC',
-    avatar: AvatarType.MARID,
-    entitles: [],
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 59,
     name: 'SIA',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1040,7 +1030,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 60,
+    id: 59,
     name: '마네다롱',
     avatar: AvatarType.RODUMANI,
     entitles: [],
@@ -1050,7 +1040,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 61,
+    id: 60,
     name: '다롱마네',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1060,7 +1050,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 62,
+    id: 61,
     name: 'YARN',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1070,7 +1060,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 63,
+    id: 62,
     name: 'HORENG',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -1080,7 +1070,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 64,
+    id: 63,
     name: 'TAKTAK',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -1090,7 +1080,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 65,
+    id: 64,
     name: 'YEOLMEG',
     avatar: AvatarType.DAO,
     entitles: [],
