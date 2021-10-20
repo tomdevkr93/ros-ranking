@@ -16,6 +16,8 @@ export enum CompetitionType {
   ELITE,
   MASTER,
   ITEM_MATCH,
+  NUMBER_ONE,
+  NUMBER_TWO,
 }
 
 export enum PositionType {
@@ -43,7 +45,7 @@ export enum EntitleType {
   MASTER = '마스터 1대장',
   ITEM_MATCH = '아이템 1대장',
   NUMBER_ONE = '🥇 정예',
-  NUMBER_TWO = '🥈 마스터'
+  NUMBER_TWO = '🥈 마스터',
 }
 
 export enum Graduate {
@@ -74,8 +76,10 @@ export function getCompetitionTitle(type: CompetitionType) {
       return '(구) 엘리트전'
     case CompetitionType.MASTER:
       return '(구) 마스터전'
-    case CompetitionType.ITEM_MATCH:
-      return '아이템 왕중왕'
+    case CompetitionType.NUMBER_ONE:
+      return '정예'
+    case CompetitionType.NUMBER_TWO:
+      return '마스터'
   }
 }
 
@@ -109,8 +113,10 @@ export function getTrophyImage(type: CompetitionType) {
     case CompetitionType.PUBLIC:
       return '/trophys/public.png'
     case CompetitionType.ELITE:
+    case CompetitionType.NUMBER_TWO:
       return '/trophys/elite.png'
     case CompetitionType.MASTER:
+    case CompetitionType.NUMBER_ONE:
       return '/trophys/master.png'
     case CompetitionType.ITEM_MATCH:
       return '/trophys/item_match.png'
@@ -118,15 +124,15 @@ export function getTrophyImage(type: CompetitionType) {
 }
 
 export interface FriendMatch {
-  id: number;
-  type: string;
-  date: string;
-  team: ['로즈샤론', string];
-  score: [number, number];
-  members: string[];
+  id: number
+  type: string
+  date: string
+  team: ['로즈샤론', string]
+  score: [number, number]
+  members: string[]
 }
 
 export enum FriendMatchType {
   SPEED = '스피드',
-  ITEM = '아이템'
+  ITEM = '아이템',
 }

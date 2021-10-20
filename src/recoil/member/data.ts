@@ -316,6 +316,11 @@ const data: MemberInfo[] = [
         season: 8,
         rank: 1,
       },
+      {
+        title: CompetitionType.NUMBER_TWO,
+        season: 1,
+        rank: 2,
+      },
     ],
     position: PositionType.MEMBER,
   },
@@ -337,6 +342,10 @@ const data: MemberInfo[] = [
       {
         title: CompetitionType.MASTER,
         season: 9,
+      },
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
       },
     ],
     records: [
@@ -364,6 +373,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.MASTER,
         season: 9,
         rank: 1,
+      },
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+        rank: 1
       },
     ],
     position: PositionType.SUBMASTER,
@@ -522,6 +536,10 @@ const data: MemberInfo[] = [
         title: CompetitionType.ELITE,
         season: 1,
       },
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+      },
     ],
     records: [
       {
@@ -533,6 +551,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.ELITE,
         season: 1,
         rank: 1,
+      },
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+        rank: 1
       },
     ],
     position: PositionType.ELITE,
@@ -636,6 +659,11 @@ const data: MemberInfo[] = [
         season: 4,
         rank: 1,
       },
+      {
+        title: CompetitionType.NUMBER_TWO,
+        season: 1,
+        rank: 2,
+      },
     ],
     position: PositionType.MEMBER,
   },
@@ -646,7 +674,13 @@ const data: MemberInfo[] = [
     entitles: [EntitleType.NUMBER_TWO],
     graduates: [],
     trophys: [],
-    records: [],
+    records: [
+      {
+        title: CompetitionType.NUMBER_TWO,
+        season: 1,
+        rank: 2,
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -685,8 +719,19 @@ const data: MemberInfo[] = [
     avatar: AvatarType.MARID,
     entitles: [EntitleType.NUMBER_ONE],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+        rank: 1
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -737,6 +782,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 4,
         rank: 1,
+      },
+      {
+        title: CompetitionType.NUMBER_TWO,
+        season: 1,
+        rank: 2,
       },
     ],
     position: PositionType.MEMBER,
@@ -914,8 +964,19 @@ const data: MemberInfo[] = [
     avatar: AvatarType.UNI,
     entitles: [EntitleType.NUMBER_ONE],
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.NUMBER_ONE,
+        season: 1,
+        rank: 1
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
