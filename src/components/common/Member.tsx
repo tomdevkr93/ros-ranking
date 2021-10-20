@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import React, { memo } from 'react'
-import { MemberInfo } from '../../interfaces'
+import { EntitleType, MemberInfo } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
@@ -20,7 +20,11 @@ function Member({ member, visibleCrown = true, visibleGraduate = true, visibleTr
         {visibleGraduate && graduates.length > 0 && <Graduate>졸</Graduate>}
         {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
         <Avatar src={avatar} />
-        <Name className={visibleTrophyCount && entitles.length > 0 ? 'king' : ''}>{name}</Name>
+        <Name className={visibleTrophyCount && entitles.length > 0 ? 'king' : ''}>
+          {entitles.includes(EntitleType.NUMBER_ONE) && "🥇"}
+          {entitles.includes(EntitleType.NUMBER_TWO) && "🥈"}
+          {name}
+        </Name>
       </MemberContainer>
     </Link>
   )
@@ -31,7 +35,7 @@ export default memo(Member)
 const MemberContainer = styled.span`
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 70px;
   text-align: center;
   cursor: pointer;
 `

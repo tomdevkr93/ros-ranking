@@ -165,7 +165,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 6,
-    name: 'BARAM',
+    name: '바람',
     avatar: AvatarType.DIZNI,
     entitles: [],
     graduates: [],
@@ -274,7 +274,7 @@ const data: MemberInfo[] = [
     id: 9,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.NUMBER_TWO],
     graduates: [],
     trophys: [
       {
@@ -323,8 +323,8 @@ const data: MemberInfo[] = [
     id: 10,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.MASTER, EntitleType.OFFICIAL_MATCH],
-    graduates: [],
+    entitles: [EntitleType.NUMBER_ONE, EntitleType.OFFICIAL_MATCH],
+    graduates: [Graduate.MASTER],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
@@ -515,7 +515,7 @@ const data: MemberInfo[] = [
     id: 17,
     name: 'TT',
     avatar: AvatarType.RABBIT,
-    entitles: [],
+    entitles: [EntitleType.NUMBER_ONE],
     graduates: [],
     trophys: [
       {
@@ -613,8 +613,8 @@ const data: MemberInfo[] = [
     id: 24,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
-    entitles: [EntitleType.ELITE],
-    graduates: [],
+    entitles: [EntitleType.NUMBER_TWO],
+    graduates: [Graduate.ELITE],
     trophys: [
       {
         title: CompetitionType.ELITE,
@@ -643,7 +643,7 @@ const data: MemberInfo[] = [
     id: 25,
     name: 'COMZZANG',
     avatar: AvatarType.RABBIT,
-    entitles: [],
+    entitles: [EntitleType.NUMBER_TWO],
     graduates: [],
     trophys: [],
     records: [],
@@ -683,7 +683,7 @@ const data: MemberInfo[] = [
     id: 29,
     name: 'CHAERIN',
     avatar: AvatarType.MARID,
-    entitles: [],
+    entitles: [EntitleType.NUMBER_ONE],
     graduates: [],
     trophys: [],
     records: [],
@@ -724,7 +724,7 @@ const data: MemberInfo[] = [
     id: 32,
     name: 'BAMBI',
     avatar: AvatarType.RABBIT,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [EntitleType.NUMBER_TWO, EntitleType.OFFICIAL_MATCH],
     graduates: [],
     trophys: [
       {
@@ -761,8 +761,8 @@ const data: MemberInfo[] = [
     id: 34,
     name: 'JJONG',
     avatar: AvatarType.CHENCHEN,
-    entitles: [EntitleType.PUBLIC],
-    graduates: [],
+    entitles: [],
+    graduates: [Graduate.PUBLIC],
     trophys: [
       {
         title: CompetitionType.PUBLIC,
@@ -912,7 +912,7 @@ const data: MemberInfo[] = [
     id: 48,
     name: 'MEINESES',
     avatar: AvatarType.UNI,
-    entitles: [],
+    entitles: [EntitleType.NUMBER_ONE],
     graduates: [],
     trophys: [],
     records: [],
@@ -962,8 +962,8 @@ const data: MemberInfo[] = [
     id: 53,
     name: 'KAI',
     avatar: AvatarType.DIZNI,
-    entitles: [EntitleType.MASTER],
-    graduates: [],
+    entitles: [],
+    graduates: [Graduate.MASTER],
     trophys: [
       {
         title: CompetitionType.MASTER,

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
-import { getPositionTitle, MemberInfo } from '../../interfaces'
+import { EntitleType, getPositionTitle, MemberInfo } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
@@ -16,7 +16,12 @@ function Info({ member }: Props) {
       </InfoLeft>
       <InfoRight>
         <li>
-          <h3>캐릭터 명:</h3> <span>{name}</span>
+          <h3>캐릭터 명:</h3>
+          <span>
+            {entitles.includes(EntitleType.NUMBER_ONE) && "🥇"}
+            {entitles.includes(EntitleType.NUMBER_TWO) && "🥈"}
+            {name}
+          </span>
         </li>
         <li>
           <h3>포지션:</h3> <span>{getPositionTitle(position)}</span>

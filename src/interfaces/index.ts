@@ -42,12 +42,14 @@ export enum EntitleType {
   ELITE = '엘리트 1대장',
   MASTER = '마스터 1대장',
   ITEM_MATCH = '아이템 1대장',
+  NUMBER_ONE = '🥇 정예',
+  NUMBER_TWO = '🥈 마스터'
 }
 
 export enum Graduate {
-  PUBLIC = '일반인 졸업자',
-  ELITE = '엘리트 졸업자',
-  MASTER = '마스터 졸업자',
+  PUBLIC = '(구)일반인 졸업자',
+  ELITE = '(구)엘리트 졸업자',
+  MASTER = '(구)마스터 졸업자',
   CLUB_MASTER = '클럽장 졸업자',
 }
 
@@ -67,11 +69,11 @@ export function getCompetitionTitle(type: CompetitionType) {
     case CompetitionType.OFFICIAL_MATCH:
       return '공식 단체전'
     case CompetitionType.PUBLIC:
-      return '일반인전'
+      return '(구) 일반인전'
     case CompetitionType.ELITE:
-      return '엘리트전'
+      return '(구) 엘리트전'
     case CompetitionType.MASTER:
-      return '마스터전'
+      return '(구) 마스터전'
     case CompetitionType.ITEM_MATCH:
       return '아이템 왕중왕'
   }
