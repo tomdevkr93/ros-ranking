@@ -76,6 +76,8 @@ export function getCompetitionTitle(type: CompetitionType) {
       return '(구) 엘리트전'
     case CompetitionType.MASTER:
       return '(구) 마스터전'
+    case CompetitionType.ITEM_MATCH:
+      return '아이템 왕중왕'
     case CompetitionType.NUMBER_ONE:
       return '정예'
     case CompetitionType.NUMBER_TWO:
