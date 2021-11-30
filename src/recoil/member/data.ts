@@ -900,7 +900,7 @@ const data: MemberInfo[] = [
   {
     id: 48,
     name: 'KNIFE',
-    avatar: AvatarType.CHENCHEN,
+    avatar: AvatarType.RABBIT,
     entitles: [],
     graduates: [],
     trophys: [],
@@ -1120,6 +1120,16 @@ const data: MemberInfo[] = [
   {
     id: 70,
     name: '영이',
+    avatar: AvatarType.BAZZI,
+    entitles: [],
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 71,
+    name: 'NOONNA',
     avatar: AvatarType.BAZZI,
     entitles: [],
     graduates: [],
