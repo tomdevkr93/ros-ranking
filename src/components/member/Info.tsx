@@ -16,7 +16,7 @@ function Info({ member }: Props) {
       </InfoLeft>
       <InfoRight>
         <li>
-          <h3>캐릭터 명:</h3>
+          <h3>캐릭터 명: </h3>
           <span>
             {entitles.includes(EntitleType.NUMBER_ONE) && "🥇"}
             {entitles.includes(EntitleType.NUMBER_TWO) && "🥈"}

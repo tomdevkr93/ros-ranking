@@ -48,12 +48,13 @@ function FriendlyMatch() {
 
   return (
     <FriendlyMatchContainer>
-      <h1>친선 경기 정보</h1>
-      <Arrow>
+      <h1>친선 경기 군 기록표 (최신)</h1>
+      <img src="/friendly_match.jpeg" alt="friendly match image" />
+      {/* <Arrow>
         <img src="/page_arrow.png" alt="prev list" onClick={onClickArrow('LEFT')} />
         <img src="/page_arrow.png" alt="next list" onClick={onClickArrow('RIGHT')} />
       </Arrow>
-      <MatchList>{useMemo(() => getMatchList(), [matches])}</MatchList>
+      <MatchList>{useMemo(() => getMatchList(), [matches])}</MatchList> */}
     </FriendlyMatchContainer>
   )
 }
@@ -68,6 +69,13 @@ const FriendlyMatchContainer = styled.section`
     width: 90%;
     margin: 20px auto 0;
     font-size: 20px;
+  }
+
+  img {
+    display: block;
+    margin: 20px auto 0;
+    width: 90%;
+    border-radius: 3px;
   }
 `
 
