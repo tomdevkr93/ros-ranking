@@ -7,7 +7,7 @@ interface Props {
 }
 
 function Info({ member }: Props) {
-  const { avatar, entitles, graduates, name, position } = member
+  const { id, avatar, entitles, graduates, name, position } = member
 
   return (
     <InfoContainer>
@@ -15,6 +15,9 @@ function Info({ member }: Props) {
         <img src={avatar} alt="멤버 아바타" />
       </InfoLeft>
       <InfoRight>
+        <li>
+          <h3>id: </h3> <span>{id}</span>
+        </li>
         <li>
           <h3>캐릭터 명: </h3>
           <span>
