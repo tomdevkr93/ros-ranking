@@ -832,7 +832,7 @@ const data: MemberInfo[] = [
     graduates: [],
     trophys: [],
     records: [],
-    position: PositionType.MEMBER,
+    position: PositionType.ELITE,
   },
   {
     id: 45,
