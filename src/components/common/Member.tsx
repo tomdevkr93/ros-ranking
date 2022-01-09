@@ -19,10 +19,15 @@ function Member({ member, visibleCrown = true, visibleGraduate = true, visibleTr
         {visibleCrown && entitles.length > 0 && <Crown src="/crown.png" alt="왕관이미지" />}
         {visibleGraduate && graduates.length > 0 && <Graduate>졸</Graduate>}
         {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
-        <Avatar src={avatar} />
+        <Avatar
+          src={avatar}
+          className={
+            entitles.includes(EntitleType.NUMBER_ONE) ? 'one' : entitles.includes(EntitleType.NUMBER_TWO) ? 'two' : ''
+          }
+        />
         <Name className={visibleTrophyCount && entitles.length > 0 ? 'king' : ''}>
-          {entitles.includes(EntitleType.NUMBER_ONE) && "🥇"}
-          {entitles.includes(EntitleType.NUMBER_TWO) && "🥈"}
+          {entitles.includes(EntitleType.NUMBER_ONE) && '🥇'}
+          {entitles.includes(EntitleType.NUMBER_TWO) && '🥈'}
           {name}
         </Name>
       </MemberContainer>
@@ -83,6 +88,14 @@ const Avatar = styled.img`
   border-radius: 50%;
   z-index: 2;
   box-shadow: 0px 0px 3px #666666;
+
+  &.one {
+    box-shadow: 1px 2px 15px red;
+  }
+
+  &.two {
+    box-shadow: 1px 2px 15px orange;
+  }
 `
 
 const Name = styled.p`
