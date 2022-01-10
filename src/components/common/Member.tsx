@@ -90,11 +90,11 @@ const Avatar = styled.img`
   box-shadow: 0px 0px 3px #666666;
 
   &.one {
-    box-shadow: 1px 2px 15px red;
+    box-shadow: 1px 2px 20px red;
   }
 
   &.two {
-    box-shadow: 1px 2px 15px orange;
+    box-shadow: 1px 2px 15px blue;
   }
 `
 
