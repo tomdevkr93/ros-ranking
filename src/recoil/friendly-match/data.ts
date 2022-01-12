@@ -78,7 +78,7 @@ const data: FriendMatch[] = [
     type: FriendMatchType.SPEED,
     date: '2021.5.13 (목) 22:00',
     score: [1, 7],
-    team: ['로즈샤론', '바람'],
+    team: ['로즈샤론', '펑키'],
     members: ['BORADOLI', 'RAMYEON', 'CASEIN', 'LIFE'],
   },
   {
@@ -87,7 +87,7 @@ const data: FriendMatch[] = [
     date: '2021.5.15 (토) 21:00',
     score: [3, 7],
     team: ['로즈샤론', '도모다찌'],
-    members: ['BARAM', 'BLANK', 'INCORNER', 'LIFE'],
+    members: ['펑키', 'BLANK', 'INCORNER', 'LIFE'],
   },
   {
     id: 12,
@@ -135,7 +135,7 @@ const data: FriendMatch[] = [
     date: '2021.8.15 (일요일) 23:00',
     score: [7, 6],
     team: ['로즈샤론', 'Wakku'],
-    members: ['WITTY', 'DETAIL', 'TAEYEON', 'BARAM'],
+    members: ['WITTY', 'DETAIL', 'TAEYEON', '펑키'],
   },
   {
     id: 18,

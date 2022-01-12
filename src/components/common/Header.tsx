@@ -7,7 +7,7 @@ function Header() {
       <Title>
         <p>카트라이더 러쉬플러스</p>
         <img src="/rosbi.png" alt="ros bi" />
-        <span>바람.ROS</span>
+        <span>펑키.ROS</span>
       </Title>
       <OpentalkLink href="https://open.kakao.com/o/gEsPpHpc" target="_blank">
         <img src="/kakaotalk.svg" alt="kakaotalk logo" />

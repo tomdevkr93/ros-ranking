@@ -98,7 +98,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 3,
-    name: '바람',
+    name: '펑키',
     avatar: AvatarType.DIZNI,
     entitles: [EntitleType.NUMBER_TWO],
     graduates: [],
