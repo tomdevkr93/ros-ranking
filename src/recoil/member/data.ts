@@ -538,7 +538,7 @@ const data: MemberInfo[] = [
     id: 20,
     name: 'CHAERIN',
     avatar: AvatarType.MARID,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
     graduates: [],
     trophys: [],
     records: [],
