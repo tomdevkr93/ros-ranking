@@ -433,14 +433,14 @@ const data: MemberInfo[] = [
         rank: 1,
       },
       {
-        title: CompetitionType.ITEM_MATCH,
-        season: 2,
-        rank: 3,
-      },
-      {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
         rank: 2,
+      },
+      {
+        title: CompetitionType.ITEM_MATCH,
+        season: 2,
+        rank: 3,
       },
     ],
     position: PositionType.MEMBER,
@@ -469,7 +469,7 @@ const data: MemberInfo[] = [
         rank: 1,
       },
     ],
-    position: PositionType.ELITE,
+    position: PositionType.MEMBER,
   },
   {
     id: 13,
