@@ -1,13 +1,13 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
-import { EntitleType, getPositionTitle, MemberInfo } from '../../interfaces'
+import { EntitleType, getPositionTitle, MemberInfo, Tier } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
 }
 
 function Info({ member }: Props) {
-  const { id, avatar, entitles, graduates, name, position } = member
+  const { id, avatar, entitles, tier, graduates, name, position } = member
 
   return (
     <InfoContainer>
@@ -21,8 +21,8 @@ function Info({ member }: Props) {
         <li>
           <h3>캐릭터 명: </h3>
           <span>
-            {entitles.includes(EntitleType.NUMBER_ONE) && "🥇"}
-            {entitles.includes(EntitleType.NUMBER_TWO) && "🥈"}
+            {tier == Tier.NUMBER_ONE && "🥇"}
+            {tier == Tier.NUMBER_TWO && "🥈"}
             {name}
           </span>
         </li>
