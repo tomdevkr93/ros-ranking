@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import React, { memo } from 'react'
-import { EntitleType, MemberInfo } from '../../interfaces'
+import { MemberInfo, Tier } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
@@ -11,7 +11,7 @@ interface Props {
 }
 
 function Member({ member, visibleCrown = true, visibleGraduate = true, visibleTrophyCount = true }: Props) {
-  const { id, avatar, name, trophys, entitles, graduates } = member
+  const { id, avatar, name, trophys, tier, entitles, graduates } = member
 
   return (
     <Link href={`/member/${id}`}>
@@ -19,15 +19,10 @@ function Member({ member, visibleCrown = true, visibleGraduate = true, visibleTr
         {visibleCrown && entitles.length > 0 && <Crown src="/crown.png" alt="왕관이미지" />}
         {visibleGraduate && graduates.length > 0 && <Graduate>졸</Graduate>}
         {visibleTrophyCount && trophys.length > 0 && <TrophysCount>{trophys.length}</TrophysCount>}
-        <Avatar
-          src={avatar}
-          className={
-            entitles.includes(EntitleType.NUMBER_ONE) ? 'one' : entitles.includes(EntitleType.NUMBER_TWO) ? 'two' : ''
-          }
-        />
+        <Avatar src={avatar} className={tier == Tier.NUMBER_ONE ? 'one' : tier == Tier.NUMBER_TWO ? 'two' : ''} />
         <Name className={visibleTrophyCount && entitles.length > 0 ? 'king' : ''}>
-          {entitles.includes(EntitleType.NUMBER_ONE) && '🥇'}
-          {entitles.includes(EntitleType.NUMBER_TWO) && '🥈'}
+          {tier === Tier.NUMBER_ONE && '🥇'}
+          {tier == Tier.NUMBER_TWO && '🥈'}
           {name}
         </Name>
       </MemberContainer>

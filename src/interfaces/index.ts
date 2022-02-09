@@ -44,8 +44,12 @@ export enum EntitleType {
   ELITE = '엘리트 1대장',
   MASTER = '마스터 1대장',
   ITEM_MATCH = '아이템 1대장',
+}
+
+export enum Tier {
   NUMBER_ONE = '🥇 정예',
   NUMBER_TWO = '🥈 마스터',
+  NUMBER_PUBLIC = '일반인',
 }
 
 export enum Graduate {
@@ -60,6 +64,7 @@ export interface MemberInfo {
   name: string
   avatar: AvatarType
   entitles: EntitleType[]
+  tier: Tier
   graduates: Graduate[]
   trophys: Trophy[]
   records: Record[]

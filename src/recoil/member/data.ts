@@ -1,4 +1,4 @@
-import { CompetitionType, EntitleType, Graduate, MemberInfo } from './../../interfaces/index'
+import { CompetitionType, EntitleType, Graduate, MemberInfo, Tier } from './../../interfaces/index'
 import { AvatarType, PositionType } from '../../interfaces/index'
 
 const data: MemberInfo[] = [
@@ -7,6 +7,7 @@ const data: MemberInfo[] = [
     name: 'HONEYMOON',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [Graduate.PUBLIC],
     trophys: [
       {
@@ -70,6 +71,7 @@ const data: MemberInfo[] = [
     name: 'SASAK',
     avatar: AvatarType.UNI,
     entitles: [EntitleType.OFFICIAL_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -109,7 +111,8 @@ const data: MemberInfo[] = [
     id: 3,
     name: '펑키',
     avatar: AvatarType.DIZNI,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [
       {
@@ -151,6 +154,7 @@ const data: MemberInfo[] = [
     name: 'RIGEL',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -177,6 +181,7 @@ const data: MemberInfo[] = [
     name: 'JIZZANG',
     avatar: AvatarType.CHENCHEN,
     entitles: [EntitleType.ITEM_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -221,7 +226,8 @@ const data: MemberInfo[] = [
     id: 6,
     name: 'RAMYEON',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [
       {
@@ -270,7 +276,8 @@ const data: MemberInfo[] = [
     id: 7,
     name: 'MINDDU',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.OFFICIAL_MATCH, EntitleType.NUMBER_ONE],
+    entitles: [EntitleType.OFFICIAL_MATCH],
+    tier: Tier.NUMBER_ONE,
     graduates: [Graduate.MASTER],
     trophys: [
       {
@@ -328,6 +335,7 @@ const data: MemberInfo[] = [
     name: '주난',
     avatar: AvatarType.MARID,
     entitles: [EntitleType.ITEM_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -359,6 +367,7 @@ const data: MemberInfo[] = [
     name: 'LEGEND',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -380,6 +389,7 @@ const data: MemberInfo[] = [
     name: 'DDANDOLI',
     avatar: AvatarType.BAZZI,
     entitles: [EntitleType.ITEM_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -419,6 +429,7 @@ const data: MemberInfo[] = [
     name: '우주',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -449,7 +460,8 @@ const data: MemberInfo[] = [
     id: 12,
     name: 'TT',
     avatar: AvatarType.RABBIT,
-    entitles: [EntitleType.NUMBER_ONE],
+    entitles: [],
+    tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [
       {
@@ -476,6 +488,7 @@ const data: MemberInfo[] = [
     name: 'ELLIS',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -486,6 +499,7 @@ const data: MemberInfo[] = [
     name: 'JISU',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -502,6 +516,7 @@ const data: MemberInfo[] = [
     name: 'IPHONE',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -512,6 +527,7 @@ const data: MemberInfo[] = [
     name: 'HUNJANG',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -521,7 +537,8 @@ const data: MemberInfo[] = [
     id: 17,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
-    entitles: [EntitleType.NUMBER_ONE],
+    entitles: [],
+    tier: Tier.NUMBER_ONE,
     graduates: [Graduate.ELITE],
     trophys: [
       {
@@ -557,6 +574,7 @@ const data: MemberInfo[] = [
     name: 'COMZZANG',
     avatar: AvatarType.RABBIT,
     entitles: [EntitleType.OFFICIAL_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -578,6 +596,7 @@ const data: MemberInfo[] = [
     name: '써니',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -588,6 +607,7 @@ const data: MemberInfo[] = [
     name: 'CHAERIN',
     avatar: AvatarType.MARID,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -598,6 +618,7 @@ const data: MemberInfo[] = [
     name: 'HANGI',
     avatar: AvatarType.MARID,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -619,6 +640,7 @@ const data: MemberInfo[] = [
     name: 'BAMBI',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -640,6 +662,7 @@ const data: MemberInfo[] = [
     name: '쫑쫑',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [Graduate.PUBLIC],
     trophys: [
       {
@@ -661,6 +684,7 @@ const data: MemberInfo[] = [
     name: 'MOON',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -671,6 +695,7 @@ const data: MemberInfo[] = [
     name: 'MIN',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -681,6 +706,7 @@ const data: MemberInfo[] = [
     name: 'OOO',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -691,6 +717,7 @@ const data: MemberInfo[] = [
     name: '카린',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -701,6 +728,7 @@ const data: MemberInfo[] = [
     name: 'JD',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -717,6 +745,7 @@ const data: MemberInfo[] = [
     name: 'APPLE',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -727,6 +756,7 @@ const data: MemberInfo[] = [
     name: 'LEVI',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -737,6 +767,7 @@ const data: MemberInfo[] = [
     name: 'NABAL',
     avatar: AvatarType.ETHAN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -753,6 +784,7 @@ const data: MemberInfo[] = [
     name: 'CHU',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -763,6 +795,7 @@ const data: MemberInfo[] = [
     name: '마네',
     avatar: AvatarType.RODUMANI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -773,6 +806,7 @@ const data: MemberInfo[] = [
     name: 'KNIFE',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -783,6 +817,7 @@ const data: MemberInfo[] = [
     name: 'JAY',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -792,7 +827,8 @@ const data: MemberInfo[] = [
     id: 36,
     name: 'HARU',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [],
     records: [],
@@ -803,6 +839,7 @@ const data: MemberInfo[] = [
     name: 'DANMUJI',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -813,6 +850,7 @@ const data: MemberInfo[] = [
     name: 'SUNGJIN',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -823,6 +861,7 @@ const data: MemberInfo[] = [
     name: 'SIGUR',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -833,6 +872,7 @@ const data: MemberInfo[] = [
     name: '밍공',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -842,7 +882,8 @@ const data: MemberInfo[] = [
     id: 41,
     name: 'KAIN',
     avatar: AvatarType.DIZNI,
-    entitles: [EntitleType.NUMBER_ONE],
+    entitles: [],
+    tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [],
     records: [],
@@ -853,6 +894,7 @@ const data: MemberInfo[] = [
     name: 'HOON',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -863,6 +905,7 @@ const data: MemberInfo[] = [
     name: 'SPET',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -873,6 +916,7 @@ const data: MemberInfo[] = [
     name: 'QUATTRO',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -883,6 +927,7 @@ const data: MemberInfo[] = [
     name: 'DALVIT',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -899,6 +944,7 @@ const data: MemberInfo[] = [
     name: '와인',
     avatar: AvatarType.RABBIT,
     entitles: [EntitleType.OFFICIAL_MATCH],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
@@ -919,7 +965,8 @@ const data: MemberInfo[] = [
     id: 47,
     name: 'ROA',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [],
     records: [
@@ -936,6 +983,7 @@ const data: MemberInfo[] = [
     name: '치즈',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -952,6 +1000,7 @@ const data: MemberInfo[] = [
     name: 'SUZY',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -962,6 +1011,7 @@ const data: MemberInfo[] = [
     name: '영이',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -972,6 +1022,7 @@ const data: MemberInfo[] = [
     name: 'NOONNA',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -982,6 +1033,7 @@ const data: MemberInfo[] = [
     name: 'HOPE',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -998,6 +1050,7 @@ const data: MemberInfo[] = [
     name: '리내',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1007,7 +1060,8 @@ const data: MemberInfo[] = [
     id: 54,
     name: 'XION',
     avatar: AvatarType.BAZZI,
-    entitles: [EntitleType.NUMBER_TWO],
+    entitles: [],
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [],
     records: [],
@@ -1018,6 +1072,7 @@ const data: MemberInfo[] = [
     name: 'HANI',
     avatar: AvatarType.RABBIT,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1028,6 +1083,7 @@ const data: MemberInfo[] = [
     name: 'BABI',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1038,6 +1094,7 @@ const data: MemberInfo[] = [
     name: 'JANI',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1048,6 +1105,7 @@ const data: MemberInfo[] = [
     name: 'SSOMACK',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1058,6 +1116,7 @@ const data: MemberInfo[] = [
     name: '순조',
     avatar: AvatarType.ETHAN,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1068,6 +1127,7 @@ const data: MemberInfo[] = [
     name: 'NAJI',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1078,6 +1138,7 @@ const data: MemberInfo[] = [
     name: '소주',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1088,6 +1149,7 @@ const data: MemberInfo[] = [
     name: 'S',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -1104,6 +1166,7 @@ const data: MemberInfo[] = [
     name: '찌니',
     avatar: AvatarType.UNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [
@@ -1120,6 +1183,7 @@ const data: MemberInfo[] = [
     name: 'NAVI',
     avatar: AvatarType.MARID,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1130,6 +1194,7 @@ const data: MemberInfo[] = [
     name: 'CHAN',
     avatar: AvatarType.UNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1140,6 +1205,7 @@ const data: MemberInfo[] = [
     name: '차누',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1150,6 +1216,7 @@ const data: MemberInfo[] = [
     name: 'RITTY',
     avatar: AvatarType.RODUMANI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1160,6 +1227,7 @@ const data: MemberInfo[] = [
     name: '츄파츕스',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1170,6 +1238,7 @@ const data: MemberInfo[] = [
     name: 'HAIM',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1180,6 +1249,7 @@ const data: MemberInfo[] = [
     name: '나노',
     avatar: AvatarType.DIZNI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1190,6 +1260,7 @@ const data: MemberInfo[] = [
     name: '혀기',
     avatar: AvatarType.BAZZI,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -1200,6 +1271,7 @@ const data: MemberInfo[] = [
     name: '짱돌',
     avatar: AvatarType.DAO,
     entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
