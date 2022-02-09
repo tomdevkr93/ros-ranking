@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import React, { memo } from 'react'
-import { EntitleType, getPositionTitle, MemberInfo, Tier } from '../../interfaces'
+import { getPositionTitle, MemberInfo, Tier } from '../../interfaces'
 
 interface Props {
   member: MemberInfo
