@@ -1224,7 +1224,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 68,
-    name: '츄파츕스',
+    name: '츄파춥스',
     avatar: AvatarType.DIZNI,
     entitles: [],
     tier: Tier.NUMBER_PUBLIC,
