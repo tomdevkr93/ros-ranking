@@ -277,7 +277,7 @@ const data: MemberInfo[] = [
     name: '민뚜',
     avatar: AvatarType.UNI,
     entitles: [EntitleType.OFFICIAL_MATCH],
-    tier: Tier.NUMBER_ONE,
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [Graduate.MASTER],
     trophys: [
       {
