@@ -429,7 +429,7 @@ const data: MemberInfo[] = [
     name: '우주',
     avatar: AvatarType.BAZZI,
     entitles: [],
-    tier: Tier.NUMBER_TWO,
+    tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [
       {
@@ -461,7 +461,7 @@ const data: MemberInfo[] = [
     name: 'TT',
     avatar: AvatarType.RABBIT,
     entitles: [],
-    tier: Tier.NUMBER_ONE,
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [
       {
@@ -762,7 +762,7 @@ const data: MemberInfo[] = [
     name: 'HARU',
     avatar: AvatarType.UNI,
     entitles: [],
-    tier: Tier.NUMBER_TWO,
+    tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [],
     records: [],
