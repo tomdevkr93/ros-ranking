@@ -1354,7 +1354,7 @@ const data: MemberInfo[] = [
   {
     id: 74,
     name: '뽀야',
-    avatar: AvatarType.DIZINI,
+    avatar: AvatarType.DIZNI,
     entitles: [],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
