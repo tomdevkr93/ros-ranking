@@ -471,7 +471,7 @@ const data: MemberInfo[] = [
     name: 'TT',
     avatar: AvatarType.RABBIT,
     entitles: [EntitleType.ITEM_MATCH],
-    tier: Tier.NUMBER_TWO,
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
       {
