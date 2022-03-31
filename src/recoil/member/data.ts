@@ -1226,7 +1226,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 64,
-    name: '빠따',
+    name: '갱생빠따',
     avatar: AvatarType.DAO,
     entitles: [],
     tier: Tier.NUMBER_PUBLIC,
@@ -1280,18 +1280,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 69,
-    name: 'ZEPHY',
-    avatar: AvatarType.ETHAN,
-    entitles: [],
-    tier: Tier.NUMBER_PUBLIC,
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 70,
+    id: 71,
     name: 'DDOK',
     avatar: AvatarType.ETHAN,
     entitles: [],
@@ -1302,7 +1291,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 71,
+    id: 72,
     name: '후니데디',
     avatar: AvatarType.UNI,
     entitles: [],
