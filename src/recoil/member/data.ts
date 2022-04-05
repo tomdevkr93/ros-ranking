@@ -282,7 +282,7 @@ const data: MemberInfo[] = [
     name: '민뚜',
     avatar: AvatarType.UNI,
     entitles: [EntitleType.OFFICIAL_MATCH],
-    tier: Tier.NUMBER_PUBLIC,
+    tier: Tier.NUMBER_TWO,
     graduates: [Graduate.MASTER],
     trophys: [
       {
@@ -471,7 +471,7 @@ const data: MemberInfo[] = [
     name: 'TT',
     avatar: AvatarType.RABBIT,
     entitles: [EntitleType.ITEM_MATCH],
-    tier: Tier.NUMBER_PUBLIC,
+    tier: Tier.NUMBER_TWO,
     graduates: [],
     trophys: [
       {
@@ -681,7 +681,7 @@ const data: MemberInfo[] = [
     name: 'LEVI',
     avatar: AvatarType.BAZZI,
     entitles: [],
-    tier: Tier.NUMBER_TWO,
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -742,7 +742,7 @@ const data: MemberInfo[] = [
     name: 'HARU',
     avatar: AvatarType.UNI,
     entitles: [],
-    tier: Tier.NUMBER_ONE,
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
@@ -808,7 +808,7 @@ const data: MemberInfo[] = [
     name: 'HOON',
     avatar: AvatarType.DIZNI,
     entitles: [],
-    tier: Tier.NUMBER_PUBLIC,
+    tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [],
     records: [
@@ -1002,7 +1002,7 @@ const data: MemberInfo[] = [
     name: 'XION',
     avatar: AvatarType.BAZZI,
     entitles: [],
-    tier: Tier.NUMBER_TWO,
+    tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [],
     records: [],
