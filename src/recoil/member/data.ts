@@ -68,7 +68,7 @@ const data: MemberInfo[] = [
   },
   {
     id: 2,
-    name: 'HAMNYA',
+    name: 'SASAK',
     avatar: AvatarType.UNI,
     entitles: [EntitleType.OFFICIAL_MATCH],
     tier: Tier.NUMBER_PUBLIC,
@@ -580,7 +580,7 @@ const data: MemberInfo[] = [
         rank: 1
       },
     ],
-    position: PositionType.ELITE,
+    position: PositionType.MEMBER,
   },
   {
     id: 17,
@@ -1237,17 +1237,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 65,
-    name: '뽀야',
-    avatar: AvatarType.DIZNI,
-    entitles: [],
-    tier: Tier.NUMBER_PUBLIC,
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 66,
     name: 'DDOK',
     avatar: AvatarType.ETHAN,
     entitles: [],
@@ -1258,7 +1247,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 67,
+    id: 66,
     name: '후니데디',
     avatar: AvatarType.UNI,
     entitles: [],
