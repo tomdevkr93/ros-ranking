@@ -70,7 +70,7 @@ const data: MemberInfo[] = [
     id: 2,
     name: 'SASAK',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
@@ -215,6 +215,11 @@ const data: MemberInfo[] = [
         rank: 3,
       },
       {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 2
+      },
+      {
         title: CompetitionType.ITEM_MATCH,
         season: 3,
         rank: 1,
@@ -281,7 +286,7 @@ const data: MemberInfo[] = [
     id: 7,
     name: '민뚜',
     avatar: AvatarType.UNI,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [],
     tier: Tier.NUMBER_TWO,
     graduates: [Graduate.MASTER],
     trophys: [
@@ -438,13 +443,17 @@ const data: MemberInfo[] = [
     id: 11,
     name: '우주',
     avatar: AvatarType.BAZZI,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     tier: Tier.NUMBER_ONE,
     graduates: [],
     trophys: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
       },
     ],
     records: [
@@ -457,6 +466,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
         rank: 2,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 1
       },
       {
         title: CompetitionType.ITEM_MATCH,
@@ -488,6 +502,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 3,
         rank: 2,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 2
       },
       {
         title: CompetitionType.ITEM_MATCH,
@@ -528,10 +547,14 @@ const data: MemberInfo[] = [
     id: 15,
     name: 'TAEYEON',
     avatar: AvatarType.CHENCHEN,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     tier: Tier.NUMBER_ONE,
     graduates: [Graduate.ELITE],
     trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+      },
       {
         title: CompetitionType.ELITE,
         season: 4,
@@ -546,6 +569,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
         rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 1
       },
       {
         title: CompetitionType.ELITE,
@@ -564,7 +592,7 @@ const data: MemberInfo[] = [
     id: 16,
     name: 'COMZZANG',
     avatar: AvatarType.RABBIT,
-    entitles: [EntitleType.OFFICIAL_MATCH],
+    entitles: [],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
     trophys: [
@@ -782,11 +810,20 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
       },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+      },
     ],
     records: [
       {
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
+        rank: 1
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
         rank: 1
       },
     ],
@@ -840,11 +877,22 @@ const data: MemberInfo[] = [
     id: 35,
     name: 'SUZY',
     avatar: AvatarType.RABBIT,
-    entitles: [],
+    entitles: [EntitleType.OFFICIAL_MATCH],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
-    trophys: [],
-    records: [],
+    trophys: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+      },
+    ],
+    records: [
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 1
+      },
+    ],
     position: PositionType.MEMBER,
   },
   {
@@ -933,6 +981,11 @@ const data: MemberInfo[] = [
         season: 5,
         rank: 2,
       },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 2
+      },
     ],
     position: PositionType.MEMBER,
   },
@@ -949,6 +1002,11 @@ const data: MemberInfo[] = [
         title: CompetitionType.OFFICIAL_MATCH,
         season: 5,
         rank: 3,
+      },
+      {
+        title: CompetitionType.OFFICIAL_MATCH,
+        season: 6,
+        rank: 2
       },
     ],
     position: PositionType.MEMBER,
