@@ -1104,7 +1104,7 @@ const data: MemberInfo[] = [
     records: [],
     position: PositionType.MEMBER,
   },
-   {
+  {
     id: 60,
     name: '리내',
     avatar: AvatarType.DAO,
@@ -1115,7 +1115,7 @@ const data: MemberInfo[] = [
     records: [],
     position: PositionType.MEMBER,
   },
-   {
+  {
     id: 61,
     name: '잔망루피',
     avatar: AvatarType.DAO,
@@ -1147,7 +1147,7 @@ const data: MemberInfo[] = [
     trophys: [],
     records: [],
     position: PositionType.MEMBER,
-  },
+  }
 ]
 
 export default data
