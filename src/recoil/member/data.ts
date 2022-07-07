@@ -1129,7 +1129,7 @@ const data: MemberInfo[] = [
   {
     id: 62,
     name: '그로',
-    avatar: AvatarType.DIZINI,
+    avatar: AvatarType.DIZNI,
     entitles: [],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
