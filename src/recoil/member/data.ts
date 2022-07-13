@@ -781,17 +781,6 @@ const data: MemberInfo[] = [
   },
   {
     id: 32,
-    name: 'SULDOG',
-    avatar: AvatarType.BAZZI,
-    entitles: [],
-    tier: Tier.NUMBER_PUBLIC,
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 33,
     name: '찌니',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -813,7 +802,7 @@ const data: MemberInfo[] = [
     position: PositionType.ELITE,
   },
   {
-    id: 34,
+    id: 33,
     name: '강철낙타',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -830,7 +819,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 35,
+    id: 34,
     name: 'CHAN',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -841,7 +830,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 36,
+    id: 35,
     name: '짱돌',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -852,7 +841,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   }, 
   {
-    id: 37,
+    id: 36,
     name: '노을',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -863,7 +852,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 38,
+    id: 37,
     name: '누나',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -874,7 +863,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 39,
+    id: 38,
     name: '포돌S',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -885,7 +874,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 40,
+    id: 39,
     name: '갱생빠따',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -896,7 +885,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 41,
+    id: 40,
     name: 'HYUNNY',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -907,7 +896,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 42,
+    id: 41,
     name: '후니데디',
     avatar: AvatarType.UNI,
     entitles: [],
@@ -918,7 +907,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 43,
+    id: 42,
     name:'QUEEN',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -929,7 +918,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 44,
+    id: 43,
     name: 'KING',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -940,7 +929,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 45,
+    id: 44,
     name: 'OU',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -951,7 +940,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 46,
+    id: 45,
     name: '참새',
     avatar: AvatarType.CHENCHEN,
     entitles: [],
@@ -962,7 +951,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 47,
+    id: 46,
     name: '나린아토',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -973,7 +962,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 48,
+    id: 47,
     name: 'YUNJAM',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -984,7 +973,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 49,
+    id: 48,
     name: 'ORI',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -995,7 +984,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 50,
+    id: 49,
     name: '똘이',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1006,7 +995,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 51,
+    id: 50,
     name: '경봉',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1017,7 +1006,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 52,
+    id: 51,
     name: '써니',
     avatar: AvatarType.RABBIT,
     entitles: [],
@@ -1028,7 +1017,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 53,
+    id: 52,
     name: 'SULHWA',
     avatar: AvatarType.ETHAN,
     entitles: [],
@@ -1039,18 +1028,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 54,
-    name: 'LEOWATXH',
-    avatar: AvatarType.DAO,
-    entitles: [],
-    tier: Tier.NUMBER_PUBLIC,
-    graduates: [],
-    trophys: [],
-    records: [],
-    position: PositionType.MEMBER,
-  },
-  {
-    id: 55,
+    id: 53,
     name: '순조',
     avatar: AvatarType.ETHAN,
     entitles: [],
@@ -1061,7 +1039,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 56,
+    id: 54,
     name: 'SANGJA',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1072,7 +1050,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 57,
+    id: 55,
     name: '햄니',
     avatar: AvatarType.MARID,
     entitles: [],
@@ -1083,7 +1061,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 58,
+    id: 56,
     name: 'MARIN',
     avatar: AvatarType.BAZZI,
     entitles: [],
@@ -1094,7 +1072,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 59,
+    id: 57,
     name: 'DALVIT',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1105,7 +1083,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 60,
+    id: 58,
     name: '리내',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1116,7 +1094,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 61,
+    id: 59,
     name: '잔망루피',
     avatar: AvatarType.DAO,
     entitles: [],
@@ -1127,7 +1105,7 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 62,
+    id: 60,
     name: '그로',
     avatar: AvatarType.DIZNI,
     entitles: [],
@@ -1138,9 +1116,20 @@ const data: MemberInfo[] = [
     position: PositionType.MEMBER,
   },
   {
-    id: 63,
+    id: 61,
     name: 'MARIN',
     avatar: AvatarType.BAZZI,
+    entitles: [],
+    tier: Tier.NUMBER_PUBLIC,
+    graduates: [],
+    trophys: [],
+    records: [],
+    position: PositionType.MEMBER,
+  },
+  {
+    id: 62,
+    name: '겨울',
+    avatar: AvatarType.DIZNI,
     entitles: [],
     tier: Tier.NUMBER_PUBLIC,
     graduates: [],
